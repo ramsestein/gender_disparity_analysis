@@ -218,3 +218,104 @@ Este proyecto es para uso académico/investigación.
 ## 👥 Contribuciones
 
 Para reportar bugs o sugerir mejoras, contacta al equipo de desarrollo.
+
+## 📖 Cómo Citar Este Proyecto
+
+Si utilizas este software en tu investigación o publicación académica, por favor cítalo de la siguiente manera:
+
+### Formato APA (7ª edición)
+```
+[Autor/es]. (2026). Gender Disparity Analysis Pipeline (Versión 1.0) [Software]. 
+GitHub. https://github.com/ramsestein/gender_disparity_analysis
+```
+
+### Formato BibTeX
+```bibtex
+@software{gender_disparity_pipeline_2026,
+  author = {Ramsés Marrero Garcia},
+  title = {Gender Disparity Analysis Pipeline: Automated Gender Disparity Analysis in Academic Conferences},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/[usuario]/gender_disparity_analysis},
+  version = {1.0}
+}
+```
+
+## 📚 Referencias Bibliográficas
+
+Este proyecto utiliza las siguientes herramientas y bibliotecas de código abierto:
+
+### Herramientas Principales
+
+**Pyannote Audio - Diarización de Speakers**
+```
+Bredin, H., & Laurent, A. (2021). End-to-end speaker segmentation for overlap-aware 
+resegmentation. In Proc. Interspeech 2021 (pp. 3111-3115).
+DOI: 10.21437/Interspeech.2021-560
+```
+```bibtex
+@inproceedings{Bredin2021,
+  author = {Hervé Bredin and Antoine Laurent},
+  title = {{End-to-end speaker segmentation for overlap-aware resegmentation}},
+  booktitle = {Proc. Interspeech 2021},
+  year = {2021},
+  pages = {3111--3115},
+  doi = {10.21437/Interspeech.2021-560}
+}
+```
+
+**OpenAI Whisper - Transcripción Automática**
+```
+Radford, A., Kim, J. W., Xu, T., Brockman, G., McLeavey, C., & Sutskever, I. (2022). 
+Robust speech recognition via large-scale weak supervision. arXiv preprint arXiv:2212.04356.
+```
+```bibtex
+@article{radford2022whisper,
+  title={Robust speech recognition via large-scale weak supervision},
+  author={Radford, Alec and Kim, Jong Wook and Xu, Tao and Brockman, Greg and McLeavey, Christine and Sutskever, Ilya},
+  journal={arXiv preprint arXiv:2212.04356},
+  year={2022}
+}
+```
+
+**Mozilla Common Voice - Clasificación de Género**
+```
+Ardila, R., Branson, M., Davis, K., Henretty, M., Kohler, M., Meyer, J., ... & Weber, G. (2020). 
+Common Voice: A massively-multilingual speech corpus. In Proceedings of the 12th Language 
+Resources and Evaluation Conference (pp. 4218-4222).
+```
+```bibtex
+@inproceedings{ardila2020common,
+  title={Common Voice: A massively-multilingual speech corpus},
+  author={Ardila, Rosana and Branson, Megan and Davis, Kelly and Henretty, Michael and Kohler, Michael and Meyer, Josh and Morais, Reuben and Saunders, Lindsay and Tyers, Francis M and Weber, Gregor},
+  booktitle={Proceedings of the 12th Language Resources and Evaluation Conference},
+  pages={4218--4222},
+  year={2020}
+}
+```
+
+**Modelo Pre-entrenado:** `alefiury/wav2vec2-large-xlsr-53-gender-recognition-librispeech`
+```
+Modelo basado en Wav2Vec2-XLSR-53 fine-tuneado para clasificación de género.
+Disponible en: https://huggingface.co/alefiury/wav2vec2-large-xlsr-53-gender-recognition-librispeech
+```
+
+### Bibliotecas de Procesamiento de Audio
+
+**librosa - Análisis de Audio**
+```
+McFee, B., Raffel, C., Liang, D., Ellis, D. P., McVicar, M., Battenberg, E., & Nieto, O. (2015). 
+librosa: Audio and music signal analysis in python. In Proceedings of the 14th Python in Science 
+Conference (Vol. 8, pp. 18-25).
+```
+```bibtex
+@inproceedings{mcfee2015librosa,
+  title={librosa: Audio and music signal analysis in python},
+  author={McFee, Brian and Raffel, Colin and Liang, Dawen and Ellis, Daniel PW and McVicar, Matt and Battenberg, Eric and Nieto, Oriol},
+  booktitle={Proceedings of the 14th python in science conference},
+  volume={8},
+  pages={18--25},
+  year={2015}
+}
+```
+
