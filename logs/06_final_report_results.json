@@ -1,0 +1,323 @@
+{
+  "timestamp": "2026-01-20T22:39:12.938106",
+  "total_audios": 51,
+  "successful": 5,
+  "skipped": 46,
+  "failed": 0,
+  "total_time_seconds": 3.38,
+  "total_interventions": 14030,
+  "total_overlaps": 20,
+  "total_interruptions": 20,
+  "results": [
+    {
+      "audio": "1",
+      "status": "skipped",
+      "n_interventions": 120
+    },
+    {
+      "audio": "2",
+      "status": "skipped",
+      "n_interventions": 75
+    },
+    {
+      "audio": "2.14.Defining_goal_frail_patient",
+      "status": "skipped",
+      "n_interventions": 302
+    },
+    {
+      "audio": "2.15_InteractiveLecture_RespiratoryMonitoring",
+      "status": "success",
+      "n_interventions": 314,
+      "n_turns": 32,
+      "n_overlaps": 2,
+      "n_interruptions": 2,
+      "gender_distribution": {
+        "female": 288,
+        "male": 26
+      },
+      "gender_duration": {
+        "female": 2573.26,
+        "male": 107.55
+      }
+    },
+    {
+      "audio": "2.16.ICM_Review_1",
+      "status": "skipped",
+      "n_interventions": 116
+    },
+    {
+      "audio": "2.17.ICM_Review_2",
+      "status": "skipped",
+      "n_interventions": 147
+    },
+    {
+      "audio": "2.18.ICM_QA",
+      "status": "skipped",
+      "n_interventions": 158
+    },
+    {
+      "audio": "3",
+      "status": "skipped",
+      "n_interventions": 83
+    },
+    {
+      "audio": "30",
+      "status": "skipped",
+      "n_interventions": 353
+    },
+    {
+      "audio": "38 parte 2",
+      "status": "skipped",
+      "n_interventions": 129
+    },
+    {
+      "audio": "39",
+      "status": "skipped",
+      "n_interventions": 266
+    },
+    {
+      "audio": "4",
+      "status": "skipped",
+      "n_interventions": 90
+    },
+    {
+      "audio": "40",
+      "status": "skipped",
+      "n_interventions": 379
+    },
+    {
+      "audio": "41",
+      "status": "skipped",
+      "n_interventions": 337
+    },
+    {
+      "audio": "42",
+      "status": "skipped",
+      "n_interventions": 357
+    },
+    {
+      "audio": "43",
+      "status": "skipped",
+      "n_interventions": 403
+    },
+    {
+      "audio": "44",
+      "status": "skipped",
+      "n_interventions": 420
+    },
+    {
+      "audio": "45",
+      "status": "skipped",
+      "n_interventions": 449
+    },
+    {
+      "audio": "46_How_promote_inclusion_disability",
+      "status": "skipped",
+      "n_interventions": 234
+    },
+    {
+      "audio": "47.Debate_admission_organ_donation",
+      "status": "skipped",
+      "n_interventions": 426
+    },
+    {
+      "audio": "48.Balancing_PEEP_Elderly_patient_ARDS",
+      "status": "skipped",
+      "n_interventions": 275
+    },
+    {
+      "audio": "49_Patient_fungi_respiratory_sample",
+      "status": "skipped",
+      "n_interventions": 261
+    },
+    {
+      "audio": "50.Reconciliating_needs_families_nurses",
+      "status": "skipped",
+      "n_interventions": 261
+    },
+    {
+      "audio": "51. Dose_duration_RRT",
+      "status": "skipped",
+      "n_interventions": 183
+    },
+    {
+      "audio": "52.Organ_failure_assessment",
+      "status": "skipped",
+      "n_interventions": 272
+    },
+    {
+      "audio": "53_Should_intensivist_be_in_ED",
+      "status": "skipped",
+      "n_interventions": 188
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09",
+      "status": "skipped",
+      "n_interventions": 87
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09 (1)",
+      "status": "skipped",
+      "n_interventions": 87
+    },
+    {
+      "audio": "Segunda tanda. Video 10 Young voices",
+      "status": "success",
+      "n_interventions": 119,
+      "n_turns": 31,
+      "n_overlaps": 1,
+      "n_interruptions": 1,
+      "gender_distribution": {
+        "male": 61,
+        "female": 58
+      },
+      "gender_duration": {
+        "female": 416.8,
+        "male": 450.9
+      }
+    },
+    {
+      "audio": "Segunda tanda. Video 12 Interactive",
+      "status": "success",
+      "n_interventions": 263,
+      "n_turns": 39,
+      "n_overlaps": 4,
+      "n_interruptions": 4,
+      "gender_distribution": {
+        "female": 235,
+        "male": 28
+      },
+      "gender_duration": {
+        "female": 2555.86,
+        "male": 146.5
+      }
+    },
+    {
+      "audio": "Segunda tanda. Video 6. Global collab",
+      "status": "success",
+      "n_interventions": 151,
+      "n_turns": 56,
+      "n_overlaps": 9,
+      "n_interruptions": 9,
+      "gender_distribution": {
+        "male": 114,
+        "female": 37
+      },
+      "gender_duration": {
+        "female": 277.14,
+        "male": 859.23
+      }
+    },
+    {
+      "audio": "Srgunda tanda. Video 8 3G Giant",
+      "status": "success",
+      "n_interventions": 107,
+      "n_turns": 49,
+      "n_overlaps": 4,
+      "n_interruptions": 4,
+      "gender_distribution": {
+        "female": 65,
+        "male": 42
+      },
+      "gender_duration": {
+        "female": 365.01,
+        "male": 827.3
+      }
+    },
+    {
+      "audio": "Video 1 Therapeutic challanges-011",
+      "status": "skipped",
+      "n_interventions": 452
+    },
+    {
+      "audio": "Video 11 When intubating",
+      "status": "skipped",
+      "n_interventions": 411
+    },
+    {
+      "audio": "Video 13 How to tackle-003",
+      "status": "skipped",
+      "n_interventions": 279
+    },
+    {
+      "audio": "Video 15 debate-017",
+      "status": "skipped",
+      "n_interventions": 496
+    },
+    {
+      "audio": "Video 17 Controversies-004",
+      "status": "skipped",
+      "n_interventions": 476
+    },
+    {
+      "audio": "Video 19 To feed-002",
+      "status": "skipped",
+      "n_interventions": 232
+    },
+    {
+      "audio": "Video 21 Should we monitorize-007",
+      "status": "skipped",
+      "n_interventions": 279
+    },
+    {
+      "audio": "Video 23 A young man -009",
+      "status": "skipped",
+      "n_interventions": 250
+    },
+    {
+      "audio": "Video 25 Joint with SMAAR-005",
+      "status": "skipped",
+      "n_interventions": 298
+    },
+    {
+      "audio": "Video 27 Can AI help-015",
+      "status": "skipped",
+      "n_interventions": 320
+    },
+    {
+      "audio": "Video 29 How to cope-010",
+      "status": "skipped",
+      "n_interventions": 419
+    },
+    {
+      "audio": "Video 3 emergency care workers-019",
+      "status": "skipped",
+      "n_interventions": 373
+    },
+    {
+      "audio": "Video 31 Critical illness is bad-012",
+      "status": "skipped",
+      "n_interventions": 232
+    },
+    {
+      "audio": "Video 33 Dynamic medication-006",
+      "status": "skipped",
+      "n_interventions": 356
+    },
+    {
+      "audio": "Video 35 Pro_con debate-014",
+      "status": "skipped",
+      "n_interventions": 368
+    },
+    {
+      "audio": "Video 37 Post-ICU syndrome-013",
+      "status": "skipped",
+      "n_interventions": 354
+    },
+    {
+      "audio": "Video 5 avoiding polypharmacy-001",
+      "status": "skipped",
+      "n_interventions": 360
+    },
+    {
+      "audio": "Video 7 independent pharmacist-016",
+      "status": "skipped",
+      "n_interventions": 322
+    },
+    {
+      "audio": "Video 9 How can I decide-008",
+      "status": "skipped",
+      "n_interventions": 341
+    }
+  ]
+}

@@ -164,6 +164,10 @@ class GenderClassifier:
             tuple: (gender, confidence)
         """
         try:
+            # Check segment length (must be at least 0.1s for the model to work properly)
+            # 16000 Hz * 0.1s = 1600 samples
+            min_samples = 1600
+            
             # Resamplear a 16kHz si es necesario
             if sample_rate != 16000:
                 audio_tensor = torch.from_numpy(audio_segment).float()
@@ -177,6 +181,10 @@ class GenderClassifier:
                 return_tensors="pt",
                 padding=True
             )
+            
+            # Check input size after feature extraction
+            if inputs.input_values.shape[1] < 100:  # Safety check for very short inputs
+                 return 'unknown', 0.0
             
             # Predicción
             with torch.no_grad():
@@ -196,104 +204,114 @@ class GenderClassifier:
     
     def classify_speaker(self, audio_path, speaker_segments, speaker_id):
         """
-        Clasifica el género de un speaker usando múltiples segmentos
+        Clasifica el género de un speaker usando concatenación de segmentos
         
         Returns:
             dict con resultados de clasificación
         """
         self.log(f"  Clasificando {speaker_id}...")
         
-        pitch_values = []
-        model_predictions = []
-        model_confidences = []
+        # Select segments to analyze (prioritize longer ones)
+        # Sort by duration descending
+        speaker_segments['duration'] = speaker_segments['end'] - speaker_segments['start']
+        sorted_segments = speaker_segments.sort_values('duration', ascending=False)
         
-        # Analizar hasta 10 segmentos por speaker (para velocidad)
-        segments_to_analyze = speaker_segments.head(min(10, len(speaker_segments)))
-        
-        for idx, row in segments_to_analyze.iterrows():
+        accumulated_audio = []
+        total_samples = 0
+        target_accumulated_seconds = 10.0 # Accumulate up to 10 seconds for robust classification
+        sample_rate_detected = None
+
+        # 1. Accumulate audio segments
+        for idx, row in sorted_segments.iterrows():
             start = row['start']
             end = row['end']
             
-            # Extraer segmento
+             # Skip extremely short segments (< 0.2s) even for accumulation
+            if (end - start) < 0.2:
+                continue
+
             try:
-                audio_segment, sample_rate = self.extract_audio_segment(audio_path, start, end)
-                
-                # Método 1: Pitch analysis
-                median_f0 = self.analyze_pitch(audio_segment, sample_rate)
-                if median_f0 is not None:
-                    pitch_values.append(median_f0)
-                
-                # Método 2: Modelo pre-entrenado
-                gender_model, confidence = self.classify_gender_by_model(audio_segment, sample_rate)
-                if gender_model != 'unknown':
-                    model_predictions.append(gender_model)
-                    model_confidences.append(confidence)
+                segment, sr = self.extract_audio_segment(audio_path, start, end)
+                if len(segment) > 0:
+                    accumulated_audio.append(segment)
+                    total_samples += len(segment)
+                    sample_rate_detected = sr
                     
-            except Exception as e:
+                    # Stop if we have enough audio
+                    if total_samples >= (target_accumulated_seconds * sr):
+                        break
+            except Exception:
                 continue
         
-        # Resultados
+        # Prepare result structure
         result = {
             'speaker': speaker_id,
-            'n_segments_analyzed': len(segments_to_analyze),
             'pitch_method': {},
             'model_method': {},
             'final_gender': 'unknown',
             'confidence': 0.0,
             'agreement': False
         }
+
+        if not accumulated_audio or sample_rate_detected is None:
+             self.log(f"    ✗ {speaker_id}: No se pudo extraer audio válido")
+             return result
+
+        # 2. Concatenate audio
+        try:
+             full_audio = np.concatenate(accumulated_audio)
+             self.log(f"    Audio acumulado: {len(full_audio)/sample_rate_detected:.1f}s")
+        except Exception as e:
+             self.log(f"    ✗ Error concatenando audio: {e}")
+             return result
+             
+        # 3. Classify ONE time on the concatenated audio
         
-        # Método 1: Pitch
-        if len(pitch_values) > 0:
-            median_f0 = np.median(pitch_values)
-            pitch_gender = self.classify_gender_by_pitch(median_f0)
-            result['pitch_method'] = {
+        # Method 1: Pitch
+        median_f0 = self.analyze_pitch(full_audio, sample_rate_detected)
+        if median_f0 is not None:
+             pitch_gender = self.classify_gender_by_pitch(median_f0)
+             result['pitch_method'] = {
                 'gender': pitch_gender,
                 'median_f0': round(float(median_f0), 2)
             }
-        
-        # Método 2: Modelo
-        if len(model_predictions) > 0:
-            # Mayoría de votos
-            male_count = model_predictions.count('male')
-            female_count = model_predictions.count('female')
-            model_gender = 'male' if male_count > female_count else 'female'
-            avg_confidence = np.mean(model_confidences)
             
-            result['model_method'] = {
-                'gender': model_gender,
-                'confidence': round(float(avg_confidence), 3),
-                'male_votes': male_count,
-                'female_votes': female_count
+        # Method 2: Model
+        gender_model, confidence = self.classify_gender_by_model(full_audio, sample_rate_detected)
+        if gender_model != 'unknown':
+             result['model_method'] = {
+                'gender': gender_model,
+                'confidence': round(float(confidence), 3)
             }
-        
-        # Decisión final
+            
+        # 4. Final Decision
         pitch_gender = result['pitch_method'].get('gender', 'unknown')
         model_gender = result['model_method'].get('gender', 'unknown')
         
         if pitch_gender != 'unknown' and model_gender != 'unknown':
             if pitch_gender == model_gender:
-                # Ambos coinciden → alta confianza
+                # Agreement
                 result['final_gender'] = pitch_gender
                 result['confidence'] = result['model_method']['confidence']
                 result['agreement'] = True
-                self.log(f"    ✓ {speaker_id}: {pitch_gender} (ambos métodos coinciden)")
+                self.log(f"    ✓ {speaker_id}: {pitch_gender} (ambos coinciden, conf={confidence:.2f})")
             else:
-                # Difieren → usar modelo (más preciso)
+                # Disagreement -> trust model
                 result['final_gender'] = model_gender
                 result['confidence'] = result['model_method']['confidence']
                 result['agreement'] = False
-                self.log(f"    ⚠️  {speaker_id}: {model_gender} (pitch={pitch_gender}, modelo={model_gender} → usando modelo)")
+                self.log(f"    ⚠️  {speaker_id}: {model_gender} (pitch={pitch_gender}, modelo={model_gender})")
+                
         elif model_gender != 'unknown':
-            # Solo modelo disponible
             result['final_gender'] = model_gender
             result['confidence'] = result['model_method']['confidence']
-            self.log(f"    → {speaker_id}: {model_gender} (solo modelo)")
+            self.log(f"    → {speaker_id}: {model_gender} (solo modelo, conf={confidence:.2f})")
+            
         elif pitch_gender != 'unknown':
-            # Solo pitch disponible
             result['final_gender'] = pitch_gender
-            result['confidence'] = 0.7  # Confianza moderada
+            result['confidence'] = 0.7
             self.log(f"    → {speaker_id}: {pitch_gender} (solo pitch)")
+            
         else:
             self.log(f"    ✗ {speaker_id}: No se pudo clasificar")
         

@@ -18,6 +18,7 @@ ENV/
 
 # Carpetas de datos (no subir a GitHub)
 video
+video_list.txt
 fuentes/audio/
 fuentes/audio_normalized/
 fuentes/diarization/

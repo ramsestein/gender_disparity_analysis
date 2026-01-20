@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-01-20T21:48:00.321923",
+  "total_videos": 10,
+  "successful": 5,
+  "skipped": 5,
+  "failed": 0,
+  "total_time_seconds": 6.38,
+  "avg_time_per_video": 0.64,
+  "results": [
+    {
+      "video": "2.15_InteractiveLecture_RespiratoryMonitoring.mp4",
+      "audio": "2.15_InteractiveLecture_RespiratoryMonitoring.wav",
+      "status": "success",
+      "size_mb": 94.35
+    },
+    {
+      "video": "2.15_InteractiveLecture_RespiratoryMonitoring.mp4",
+      "audio": "2.15_InteractiveLecture_RespiratoryMonitoring.wav",
+      "status": "skipped",
+      "size_mb": 94.35,
+      "message": "Already exists"
+    },
+    {
+      "video": "Segunda tanda. Video 10 Young voices.mov",
+      "audio": "Segunda tanda. Video 10 Young voices.wav",
+      "status": "success",
+      "size_mb": 29.52
+    },
+    {
+      "video": "Segunda tanda. Video 10 Young voices.mov",
+      "audio": "Segunda tanda. Video 10 Young voices.wav",
+      "status": "skipped",
+      "size_mb": 29.52,
+      "message": "Already exists"
+    },
+    {
+      "video": "Segunda tanda. Video 12 Interactive.mov",
+      "audio": "Segunda tanda. Video 12 Interactive.wav",
+      "status": "success",
+      "size_mb": 92.34
+    },
+    {
+      "video": "Segunda tanda. Video 12 Interactive.mov",
+      "audio": "Segunda tanda. Video 12 Interactive.wav",
+      "status": "skipped",
+      "size_mb": 92.34,
+      "message": "Already exists"
+    },
+    {
+      "video": "Segunda tanda. Video 6. Global collab.mov",
+      "audio": "Segunda tanda. Video 6. Global collab.wav",
+      "status": "success",
+      "size_mb": 37.03
+    },
+    {
+      "video": "Segunda tanda. Video 6. Global collab.mov",
+      "audio": "Segunda tanda. Video 6. Global collab.wav",
+      "status": "skipped",
+      "size_mb": 37.03,
+      "message": "Already exists"
+    },
+    {
+      "video": "Srgunda tanda. Video 8 3G Giant.mov",
+      "audio": "Srgunda tanda. Video 8 3G Giant.wav",
+      "status": "success",
+      "size_mb": 38.28
+    },
+    {
+      "video": "Srgunda tanda. Video 8 3G Giant.mov",
+      "audio": "Srgunda tanda. Video 8 3G Giant.wav",
+      "status": "skipped",
+      "size_mb": 38.28,
+      "message": "Already exists"
+    }
+  ]
+}

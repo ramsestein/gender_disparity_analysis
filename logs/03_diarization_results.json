@@ -1,0 +1,386 @@
+{
+  "timestamp": "2026-01-20T22:28:33.214782",
+  "device": "cpu",
+  "total_audios": 51,
+  "successful": 5,
+  "skipped": 46,
+  "failed": 0,
+  "total_time_seconds": 1985.21,
+  "avg_time_per_audio": 397.04,
+  "total_speakers_detected": 463,
+  "total_overlaps_detected": 20,
+  "results": [
+    {
+      "audio": "1",
+      "status": "skipped",
+      "n_speakers": 3,
+      "n_segments": 120,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "2.14.Defining_goal_frail_patient",
+      "status": "skipped",
+      "n_speakers": 16,
+      "n_segments": 302,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "2.15_InteractiveLecture_RespiratoryMonitoring",
+      "status": "success",
+      "n_speakers": 4,
+      "n_segments": 314,
+      "n_overlaps": 2,
+      "total_overlap_seconds": 1.64,
+      "duration_seconds": 3090.33,
+      "processing_time_seconds": 617.6
+    },
+    {
+      "audio": "2.16.ICM_Review_1",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 116,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "2.17.ICM_Review_2",
+      "status": "skipped",
+      "n_speakers": 9,
+      "n_segments": 147,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "2.18.ICM_QA",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 158,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "2",
+      "status": "skipped",
+      "n_speakers": 2,
+      "n_segments": 75,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "3",
+      "status": "skipped",
+      "n_speakers": 5,
+      "n_segments": 83,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "30",
+      "status": "skipped",
+      "n_speakers": 9,
+      "n_segments": 353,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "38 parte 2",
+      "status": "skipped",
+      "n_speakers": 8,
+      "n_segments": 129,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "39",
+      "status": "skipped",
+      "n_speakers": 12,
+      "n_segments": 266,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "4",
+      "status": "skipped",
+      "n_speakers": 2,
+      "n_segments": 90,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "40",
+      "status": "skipped",
+      "n_speakers": 9,
+      "n_segments": 379,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "41",
+      "status": "skipped",
+      "n_speakers": 15,
+      "n_segments": 337,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "42",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 357,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "43",
+      "status": "skipped",
+      "n_speakers": 13,
+      "n_segments": 403,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "44",
+      "status": "skipped",
+      "n_speakers": 12,
+      "n_segments": 420,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "45",
+      "status": "skipped",
+      "n_speakers": 10,
+      "n_segments": 449,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "46_How_promote_inclusion_disability",
+      "status": "skipped",
+      "n_speakers": 10,
+      "n_segments": 234,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "47.Debate_admission_organ_donation",
+      "status": "skipped",
+      "n_speakers": 15,
+      "n_segments": 426,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "48.Balancing_PEEP_Elderly_patient_ARDS",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 275,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "49_Patient_fungi_respiratory_sample",
+      "status": "skipped",
+      "n_speakers": 6,
+      "n_segments": 261,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "50.Reconciliating_needs_families_nurses",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 261,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "51. Dose_duration_RRT",
+      "status": "skipped",
+      "n_speakers": 10,
+      "n_segments": 183,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "52.Organ_failure_assessment",
+      "status": "skipped",
+      "n_speakers": 10,
+      "n_segments": 272,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "53_Should_intensivist_be_in_ED",
+      "status": "skipped",
+      "n_speakers": 8,
+      "n_segments": 188,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09 (1)",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 87,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 87,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Segunda tanda. Video 10 Young voices",
+      "status": "success",
+      "n_speakers": 4,
+      "n_segments": 119,
+      "n_overlaps": 1,
+      "total_overlap_seconds": 1.15,
+      "duration_seconds": 961.92,
+      "processing_time_seconds": 198.17
+    },
+    {
+      "audio": "Segunda tanda. Video 12 Interactive",
+      "status": "success",
+      "n_speakers": 6,
+      "n_segments": 263,
+      "n_overlaps": 4,
+      "total_overlap_seconds": 7.2,
+      "duration_seconds": 3012.83,
+      "processing_time_seconds": 647.18
+    },
+    {
+      "audio": "Segunda tanda. Video 6. Global collab",
+      "status": "success",
+      "n_speakers": 4,
+      "n_segments": 151,
+      "n_overlaps": 9,
+      "total_overlap_seconds": 68.64,
+      "duration_seconds": 1205.61,
+      "processing_time_seconds": 255.06
+    },
+    {
+      "audio": "Srgunda tanda. Video 8 3G Giant",
+      "status": "success",
+      "n_speakers": 3,
+      "n_segments": 107,
+      "n_overlaps": 4,
+      "total_overlap_seconds": 25.44,
+      "duration_seconds": 1247.63,
+      "processing_time_seconds": 264.18
+    },
+    {
+      "audio": "Video 1 Therapeutic challanges-011",
+      "status": "skipped",
+      "n_speakers": 12,
+      "n_segments": 452,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 11 When intubating",
+      "status": "skipped",
+      "n_speakers": 8,
+      "n_segments": 411,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 13 How to tackle-003",
+      "status": "skipped",
+      "n_speakers": 10,
+      "n_segments": 279,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 15 debate-017",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 496,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 17 Controversies-004",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 476,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 19 To feed-002",
+      "status": "skipped",
+      "n_speakers": 12,
+      "n_segments": 232,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 21 Should we monitorize-007",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 279,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 23 A young man -009",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 250,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 25 Joint with SMAAR-005",
+      "status": "skipped",
+      "n_speakers": 13,
+      "n_segments": 298,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 27 Can AI help-015",
+      "status": "skipped",
+      "n_speakers": 13,
+      "n_segments": 320,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 29 How to cope-010",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 419,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "Video 3 emergency care workers-019",
+      "status": "skipped",
+      "n_speakers": 9,
+      "n_segments": 373,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 31 Critical illness is bad-012",
+      "status": "skipped",
+      "n_speakers": 8,
+      "n_segments": 232,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 33 Dynamic medication-006",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 356,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 35 Pro_con debate-014",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 368,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 37 Post-ICU syndrome-013",
+      "status": "skipped",
+      "n_speakers": 14,
+      "n_segments": 354,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 5 avoiding polypharmacy-001",
+      "status": "skipped",
+      "n_speakers": 9,
+      "n_segments": 360,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 7 independent pharmacist-016",
+      "status": "skipped",
+      "n_speakers": 10,
+      "n_segments": 322,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Video 9 How can I decide-008",
+      "status": "skipped",
+      "n_speakers": 14,
+      "n_segments": 341,
+      "processing_time_seconds": 0.0
+    }
+  ]
+}

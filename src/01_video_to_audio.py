@@ -13,7 +13,7 @@ import json
 import sys
 
 class AudioExtractor:
-    def __init__(self, videos_dir="videos", audio_dir="audio", logs_dir="logs"):
+    def __init__(self, videos_dir="videos", audio_dir="fuentes/audio", logs_dir="logs"):
         self.videos_dir = Path(videos_dir)
         self.audio_dir = Path(audio_dir)
         self.logs_dir = Path(logs_dir)
@@ -256,7 +256,7 @@ def main():
     try:
         extractor = AudioExtractor(
             videos_dir="video",
-            audio_dir="audio",
+            audio_dir="fuentes/audio",
             logs_dir="logs"
         )
         

@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-01-20T21:55:11.772313",
+  "noise_reduction_enabled": true,
+  "total_audios": 51,
+  "successful": 5,
+  "skipped": 46,
+  "failed": 0,
+  "total_time_seconds": 265.33,
+  "avg_time_per_audio": 53.07,
+  "results": [
+    {
+      "audio": "1.wav",
+      "status": "skipped",
+      "size_mb": 37.22
+    },
+    {
+      "audio": "2.14.Defining_goal_frail_patient.wav",
+      "status": "skipped",
+      "size_mb": 76.31
+    },
+    {
+      "audio": "2.15_InteractiveLecture_RespiratoryMonitoring.wav",
+      "status": "success",
+      "size_mb": 94.35
+    },
+    {
+      "audio": "2.16.ICM_Review_1.wav",
+      "status": "skipped",
+      "size_mb": 24.5
+    },
+    {
+      "audio": "2.17.ICM_Review_2.wav",
+      "status": "skipped",
+      "size_mb": 34.15
+    },
+    {
+      "audio": "2.18.ICM_QA.wav",
+      "status": "skipped",
+      "size_mb": 47.15
+    },
+    {
+      "audio": "2.wav",
+      "status": "skipped",
+      "size_mb": 28.53
+    },
+    {
+      "audio": "3.wav",
+      "status": "skipped",
+      "size_mb": 33.55
+    },
+    {
+      "audio": "30.wav",
+      "status": "skipped",
+      "size_mb": 75.39
+    },
+    {
+      "audio": "38 parte 2.wav",
+      "status": "skipped",
+      "size_mb": 45.97
+    },
+    {
+      "audio": "39.wav",
+      "status": "skipped",
+      "size_mb": 80.73
+    },
+    {
+      "audio": "4.wav",
+      "status": "skipped",
+      "size_mb": 30.46
+    },
+    {
+      "audio": "40.wav",
+      "status": "skipped",
+      "size_mb": 76.8
+    },
+    {
+      "audio": "41.wav",
+      "status": "skipped",
+      "size_mb": 77.58
+    },
+    {
+      "audio": "42.wav",
+      "status": "skipped",
+      "size_mb": 74.09
+    },
+    {
+      "audio": "43.wav",
+      "status": "skipped",
+      "size_mb": 76.2
+    },
+    {
+      "audio": "44.wav",
+      "status": "skipped",
+      "size_mb": 76.06
+    },
+    {
+      "audio": "45.wav",
+      "status": "skipped",
+      "size_mb": 75.73
+    },
+    {
+      "audio": "46_How_promote_inclusion_disability.wav",
+      "status": "skipped",
+      "size_mb": 78.49
+    },
+    {
+      "audio": "47.Debate_admission_organ_donation.wav",
+      "status": "skipped",
+      "size_mb": 88.07
+    },
+    {
+      "audio": "48.Balancing_PEEP_Elderly_patient_ARDS.wav",
+      "status": "skipped",
+      "size_mb": 71.31
+    },
+    {
+      "audio": "49_Patient_fungi_respiratory_sample.wav",
+      "status": "skipped",
+      "size_mb": 74.24
+    },
+    {
+      "audio": "50.Reconciliating_needs_families_nurses.wav",
+      "status": "skipped",
+      "size_mb": 66.63
+    },
+    {
+      "audio": "51. Dose_duration_RRT.wav",
+      "status": "skipped",
+      "size_mb": 74.69
+    },
+    {
+      "audio": "52.Organ_failure_assessment.wav",
+      "status": "skipped",
+      "size_mb": 72.28
+    },
+    {
+      "audio": "53_Should_intensivist_be_in_ED.wav",
+      "status": "skipped",
+      "size_mb": 78.77
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09 (1).wav",
+      "status": "skipped",
+      "size_mb": 35.08
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09.wav",
+      "status": "skipped",
+      "size_mb": 35.08
+    },
+    {
+      "audio": "Segunda tanda. Video 10 Young voices.wav",
+      "status": "success",
+      "size_mb": 29.52
+    },
+    {
+      "audio": "Segunda tanda. Video 12 Interactive.wav",
+      "status": "success",
+      "size_mb": 92.34
+    },
+    {
+      "audio": "Segunda tanda. Video 6. Global collab.wav",
+      "status": "success",
+      "size_mb": 37.03
+    },
+    {
+      "audio": "Srgunda tanda. Video 8 3G Giant.wav",
+      "status": "success",
+      "size_mb": 38.28
+    },
+    {
+      "audio": "Video 1 Therapeutic challanges-011.wav",
+      "status": "skipped",
+      "size_mb": 82.54
+    },
+    {
+      "audio": "Video 11 When intubating.wav",
+      "status": "skipped",
+      "size_mb": 75.72
+    },
+    {
+      "audio": "Video 13 How to tackle-003.wav",
+      "status": "skipped",
+      "size_mb": 73.78
+    },
+    {
+      "audio": "Video 15 debate-017.wav",
+      "status": "skipped",
+      "size_mb": 103.42
+    },
+    {
+      "audio": "Video 17 Controversies-004.wav",
+      "status": "skipped",
+      "size_mb": 133.14
+    },
+    {
+      "audio": "Video 19 To feed-002.wav",
+      "status": "skipped",
+      "size_mb": 80.34
+    },
+    {
+      "audio": "Video 21 Should we monitorize-007.wav",
+      "status": "skipped",
+      "size_mb": 76.18
+    },
+    {
+      "audio": "Video 23 A young man -009.wav",
+      "status": "skipped",
+      "size_mb": 89.36
+    },
+    {
+      "audio": "Video 25 Joint with SMAAR-005.wav",
+      "status": "skipped",
+      "size_mb": 89.75
+    },
+    {
+      "audio": "Video 27 Can AI help-015.wav",
+      "status": "skipped",
+      "size_mb": 71.77
+    },
+    {
+      "audio": "Video 29 How to cope-010.wav",
+      "status": "skipped",
+      "size_mb": 89.42
+    },
+    {
+      "audio": "Video 3 emergency care workers-019.wav",
+      "status": "skipped",
+      "size_mb": 82.25
+    },
+    {
+      "audio": "Video 31 Critical illness is bad-012.wav",
+      "status": "skipped",
+      "size_mb": 77.62
+    },
+    {
+      "audio": "Video 33 Dynamic medication-006.wav",
+      "status": "skipped",
+      "size_mb": 95.53
+    },
+    {
+      "audio": "Video 35 Pro_con debate-014.wav",
+      "status": "skipped",
+      "size_mb": 84.86
+    },
+    {
+      "audio": "Video 37 Post-ICU syndrome-013.wav",
+      "status": "skipped",
+      "size_mb": 76.71
+    },
+    {
+      "audio": "Video 5 avoiding polypharmacy-001.wav",
+      "status": "skipped",
+      "size_mb": 73.05
+    },
+    {
+      "audio": "Video 7 independent pharmacist-016.wav",
+      "status": "skipped",
+      "size_mb": 76.36
+    },
+    {
+      "audio": "Video 9 How can I decide-008.wav",
+      "status": "skipped",
+      "size_mb": 83.95
+    }
+  ]
+}
