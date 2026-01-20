@@ -35,7 +35,7 @@ El código se libera públicamente para permitir:
 
 1. **Descarga o clona este proyecto**
 
-2. **Coloca tus videos** en la carpeta `video/`
+2. **Coloca tus videos** en la carpeta `video/` dentro del proyecto. Debes crearla y llamarla así en el proyecto
 
 3. **Ejecuta el script de instalación y pipeline:**
 

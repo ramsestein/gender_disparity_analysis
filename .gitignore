@@ -17,10 +17,14 @@ ENV/
 .env
 
 # Carpetas de datos (no subir a GitHub)
-video/
-fuentes/
-final_reports/
-logs/
+video
+fuentes/audio/
+fuentes/audio_normalized/
+fuentes/diarization/
+fuentes/transcription/
+fuentes/gender_classification/  
+final_reports/csv/
+final_reports/excel/
 
 # Archivos temporales
 *.log
