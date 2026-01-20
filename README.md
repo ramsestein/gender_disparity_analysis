@@ -179,6 +179,8 @@ Tiempos aproximados por audio de 20 minutos (CPU):
 | 06 - Reportes | 1s |
 | **Total** | **~25 min** |
 
+**Nota sobre Memoria:** El script de diarización (`03_diarization.py`) incluye optimización automática de RAM y monitoreo en tiempo real. Libera recursos después de cada audio para evitar saturación.
+
 ## 🎓 Métodos de Clasificación de Género
 
 El sistema usa un **enfoque híbrido**:

@@ -16,8 +16,15 @@ from pyannote.audio import Pipeline
 import soundfile as sf
 import numpy as np
 import tempfile
+import gc
 import warnings
 warnings.filterwarnings('ignore')
+
+try:
+    import psutil
+    PSUTIL_AVAILABLE = True
+except ImportError:
+    PSUTIL_AVAILABLE = False
 
 class Diarizer:
     def __init__(self, audio_dir="fuentes/audio_normalized", output_dir="fuentes/diarization", logs_dir="logs", hf_token=None):
@@ -93,6 +100,20 @@ class Diarizer:
         """Obtiene lista de audios WAV"""
         audio_files = list(self.audio_dir.glob("*.wav"))
         return sorted(audio_files)
+    
+    def get_memory_usage(self):
+        """Retorna uso de memoria en MB y porcentaje"""
+        if not PSUTIL_AVAILABLE:
+            return None, None
+        
+        try:
+            process = psutil.Process()
+            mem_info = process.memory_info()
+            mem_mb = mem_info.rss / 1024 / 1024
+            mem_percent = process.memory_percent()
+            return mem_mb, mem_percent
+        except Exception:
+            return None, None
     
     def load_audio(self, audio_path):
         """
@@ -255,9 +276,26 @@ class Diarizer:
             }
         
         finally:
+            # Limpieza explícita de memoria
+            try:
+                # Eliminar referencias a objetos grandes
+                if 'audio_dict' in locals():
+                    del audio_dict
+                if 'diarization' in locals():
+                    del diarization
+                if 'segments' in locals():
+                    del segments
+                if 'df' in locals():
+                    del df
+            except:
+                pass
+            
             # Limpiar cache de GPU (aunque usemos CPU)
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
+            
+            # Forzar garbage collection
+            gc.collect()
     
     def process_all(self):
         """Procesa todos los audios"""
@@ -303,6 +341,21 @@ class Diarizer:
             
             result['processing_time_seconds'] = round(audio_elapsed, 2)
             results.append(result)
+            
+            # Monitoreo de memoria
+            mem_mb, mem_percent = self.get_memory_usage()
+            if mem_mb is not None:
+                self.log(f"💾 Memoria: {mem_mb:.1f} MB ({mem_percent:.1f}%)")
+            
+            # Garbage collection cada 3 archivos para liberar memoria
+            if i % 3 == 0:
+                self.log(f"🧹 Limpiando memoria...")
+                gc.collect()
+                mem_mb_after, mem_percent_after = self.get_memory_usage()
+                if mem_mb_after is not None and mem_mb is not None:
+                    freed = mem_mb - mem_mb_after
+                    if freed > 0:
+                        self.log(f"   ✓ Liberados {freed:.1f} MB")
             
             # Estimación tiempo restante
             if result['status'] != 'skipped':
