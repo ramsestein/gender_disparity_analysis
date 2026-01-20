@@ -1,0 +1,54 @@
+MIT License
+
+Copyright (c) 2026 Ramsés [Apellido]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Sobre este Software
+
+Este software ha sido desarrollado para el análisis automatizado de disparidad de género 
+en conversaciones capturadas en videos de conferencias, congresos y eventos académicos. 
+
+El sistema procesa grabaciones de video para extraer, transcribir y analizar las 
+intervenciones de diferentes participantes, clasificando automáticamente el género de 
+cada interlocutor y generando métricas detalladas sobre patrones de participación, 
+tiempo de habla, interrupciones y dinámicas conversacionales.
+
+Esta herramienta se libera bajo licencia MIT con el objetivo de:
+
+1. **Transparencia**: Permitir auditorías independientes de los métodos y algoritmos 
+   utilizados en el análisis de disparidad de género.
+
+2. **Reproducibilidad**: Facilitar la replicación de estudios y análisis por parte de 
+   investigadores, organizadores de eventos y entidades interesadas en evaluar la 
+   equidad de género en espacios de discusión académica y profesional.
+
+3. **Mejora Continua**: Fomentar la colaboración de la comunidad científica y técnica 
+   en el perfeccionamiento de las metodologías de análisis automatizado.
+
+4. **Accesibilidad**: Democratizar el acceso a herramientas de análisis de género, 
+   permitiendo que organizaciones de cualquier tamaño puedan evaluar y mejorar la 
+   inclusión en sus eventos.
+
+El código fuente, la documentación y los métodos empleados están disponibles 
+públicamente para garantizar que cualquier tercero pueda verificar, validar y 
+mejorar los análisis realizados, contribuyendo así a una mayor objetividad y 
+rigor en los estudios de disparidad de género en contextos académicos y profesionales.
