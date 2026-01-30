@@ -1,262 +1,368 @@
 {
-  "timestamp": "2026-01-20T22:39:07.887961",
-  "total_audios": 51,
-  "successful": 5,
-  "skipped": 46,
+  "timestamp": "2026-01-23T17:18:35.988854",
+  "total_audios": 75,
+  "successful": 9,
+  "skipped": 66,
   "failed": 0,
-  "total_time_seconds": 54.42,
-  "total_speakers_classified": 463,
+  "total_time_seconds": 127.21,
+  "total_speakers_classified": 652,
   "results": [
     {
       "audio": "1",
       "status": "skipped",
       "n_speakers": 3,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "10 Large Language Model for your ICU- Revolution or risk_",
+      "status": "skipped",
+      "n_speakers": 5,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "11 A conversation with the 2025 ESICM HonoraryMembers",
+      "status": "success",
+      "n_speakers": 4,
+      "results": {
+        "SPEAKER_03": {
+          "speaker": "SPEAKER_03",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 103.9
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_00": {
+          "speaker": "SPEAKER_00",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 215.19
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_02": {
+          "speaker": "SPEAKER_02",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 133.54
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_01": {
+          "speaker": "SPEAKER_01",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 116.83
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        }
+      },
+      "processing_time_seconds": 11.0
+    },
+    {
+      "audio": "12 Perioperative anticoagulation management for the critically ill patient- When to start and stop medications_",
+      "status": "skipped",
+      "n_speakers": 8,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_",
+      "status": "success",
+      "n_speakers": 8,
+      "results": {
+        "SPEAKER_03": {
+          "speaker": "SPEAKER_03",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 106.73
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_06": {
+          "speaker": "SPEAKER_06",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 105.01
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_00": {
+          "speaker": "SPEAKER_00",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 205.6
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_05": {
+          "speaker": "SPEAKER_05",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 146.32
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_01": {
+          "speaker": "SPEAKER_01",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 236.45
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_07": {
+          "speaker": "SPEAKER_07",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 110.82
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.998
+          },
+          "final_gender": "male",
+          "confidence": 0.998,
+          "agreement": true
+        },
+        "SPEAKER_04": {
+          "speaker": "SPEAKER_04",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 119.37
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_02": {
+          "speaker": "SPEAKER_02",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 84.41
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        }
+      },
+      "processing_time_seconds": 17.68
+    },
+    {
+      "audio": "14 Joint with JSICM - How do we approach hemoadsorption- Experience from Japan and Europe",
+      "status": "skipped",
+      "n_speakers": 7,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "18 Joint with SCCM - Evolving ICU advanced practice providers experience around the world",
+      "status": "skipped",
+      "n_speakers": 12,
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2",
       "status": "skipped",
       "n_speakers": 2,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "2 ECLS- what's new and should I change my practice_",
+      "status": "skipped",
+      "n_speakers": 9,
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.14.Defining_goal_frail_patient",
       "status": "skipped",
       "n_speakers": 16,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.15_InteractiveLecture_RespiratoryMonitoring",
-      "status": "success",
+      "status": "skipped",
       "n_speakers": 4,
-      "results": {
-        "SPEAKER_00": {
-          "speaker": "SPEAKER_00",
-          "pitch_method": {
-            "gender": "female",
-            "median_f0": 201.15
-          },
-          "model_method": {
-            "gender": "female",
-            "confidence": 0.999
-          },
-          "final_gender": "female",
-          "confidence": 0.999,
-          "agreement": true
-        },
-        "SPEAKER_02": {
-          "speaker": "SPEAKER_02",
-          "pitch_method": {
-            "gender": "male",
-            "median_f0": 147.23
-          },
-          "model_method": {
-            "gender": "male",
-            "confidence": 0.997
-          },
-          "final_gender": "male",
-          "confidence": 0.997,
-          "agreement": true
-        },
-        "SPEAKER_01": {
-          "speaker": "SPEAKER_01",
-          "pitch_method": {
-            "gender": "female",
-            "median_f0": 272.97
-          },
-          "model_method": {
-            "gender": "female",
-            "confidence": 0.999
-          },
-          "final_gender": "female",
-          "confidence": 0.999,
-          "agreement": true
-        },
-        "SPEAKER_03": {
-          "speaker": "SPEAKER_03",
-          "pitch_method": {
-            "gender": "male",
-            "median_f0": 102.54
-          },
-          "model_method": {
-            "gender": "male",
-            "confidence": 0.999
-          },
-          "final_gender": "male",
-          "confidence": 0.999,
-          "agreement": true
-        }
-      },
-      "processing_time_seconds": 7.6
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.16.ICM_Review_1",
       "status": "skipped",
       "n_speakers": 7,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.17.ICM_Review_2",
       "status": "skipped",
       "n_speakers": 9,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.18.ICM_QA",
       "status": "skipped",
       "n_speakers": 7,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "20 The consensus guideline on shock and haemodynamic monitoring- Why should I follow it_",
+      "status": "skipped",
+      "n_speakers": 12,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "22 Blood purification in sepsis- Fantasy or progress_",
+      "status": "skipped",
+      "n_speakers": 7,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "24 Spontaneous Breathing Trials- Controversies",
+      "status": "skipped",
+      "n_speakers": 14,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "26 When does organ inflammation escalate into ARDS_ ",
+      "status": "skipped",
+      "n_speakers": 7,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "28 Can we trust our microbiological diagnostics_",
+      "status": "skipped",
+      "n_speakers": 8,
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "3",
       "status": "skipped",
       "n_speakers": 5,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "30",
       "status": "skipped",
       "n_speakers": 9,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
-      "audio": "38 parte 2",
+      "audio": "32 Debate - Post-ICU outpatient clinic- Does it change my patient outcomes_",
       "status": "skipped",
-      "n_speakers": 8,
-      "processing_time_seconds": 0.0
+      "n_speakers": 5,
+      "processing_time_seconds": 0.01
     },
     {
-      "audio": "39",
-      "status": "skipped",
-      "n_speakers": 12,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "4",
-      "status": "skipped",
-      "n_speakers": 2,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "40",
-      "status": "skipped",
-      "n_speakers": 9,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "41",
-      "status": "skipped",
-      "n_speakers": 15,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "42",
-      "status": "skipped",
-      "n_speakers": 7,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "43",
-      "status": "skipped",
-      "n_speakers": 13,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "44",
-      "status": "skipped",
-      "n_speakers": 12,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "45",
-      "status": "skipped",
-      "n_speakers": 10,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "46_How_promote_inclusion_disability",
-      "status": "skipped",
-      "n_speakers": 10,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "47.Debate_admission_organ_donation",
-      "status": "skipped",
-      "n_speakers": 15,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "48.Balancing_PEEP_Elderly_patient_ARDS",
-      "status": "skipped",
-      "n_speakers": 11,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "49_Patient_fungi_respiratory_sample",
-      "status": "skipped",
-      "n_speakers": 6,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "50.Reconciliating_needs_families_nurses",
-      "status": "skipped",
-      "n_speakers": 11,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "51. Dose_duration_RRT",
-      "status": "skipped",
-      "n_speakers": 10,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "52.Organ_failure_assessment",
-      "status": "skipped",
-      "n_speakers": 10,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "53_Should_intensivist_be_in_ED",
-      "status": "skipped",
-      "n_speakers": 8,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09",
-      "status": "skipped",
-      "n_speakers": 7,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09 (1)",
-      "status": "skipped",
-      "n_speakers": 7,
-      "processing_time_seconds": 0.0
-    },
-    {
-      "audio": "Segunda tanda. Video 10 Young voices",
+      "audio": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_",
       "status": "success",
-      "n_speakers": 4,
+      "n_speakers": 13,
       "results": {
-        "SPEAKER_03": {
-          "speaker": "SPEAKER_03",
+        "SPEAKER_11": {
+          "speaker": "SPEAKER_11",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 128.38
+            "median_f0": 117.86
           },
           "model_method": {
             "gender": "male",
-            "confidence": 0.998
+            "confidence": 0.999
           },
           "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_04": {
+          "speaker": "SPEAKER_04",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 100.4
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_09": {
+          "speaker": "SPEAKER_09",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 167.49
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.998
+          },
+          "final_gender": "female",
           "confidence": 0.998,
           "agreement": true
         },
-        "SPEAKER_00": {
-          "speaker": "SPEAKER_00",
+        "SPEAKER_07": {
+          "speaker": "SPEAKER_07",
           "pitch_method": {
             "gender": "female",
-            "median_f0": 202.08
+            "median_f0": 235.26
           },
           "model_method": {
             "gender": "female",
@@ -266,11 +372,95 @@
           "confidence": 0.999,
           "agreement": true
         },
+        "SPEAKER_08": {
+          "speaker": "SPEAKER_08",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 195.95
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_00": {
+          "speaker": "SPEAKER_00",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 104.61
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
         "SPEAKER_01": {
           "speaker": "SPEAKER_01",
           "pitch_method": {
+            "gender": "male",
+            "median_f0": 108.02
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_10": {
+          "speaker": "SPEAKER_10",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 94.54
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_12": {
+          "speaker": "SPEAKER_12",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 121.47
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_06": {
+          "speaker": "SPEAKER_06",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 96.9
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_05": {
+          "speaker": "SPEAKER_05",
+          "pitch_method": {
             "gender": "female",
-            "median_f0": 172.34
+            "median_f0": 188.41
           },
           "model_method": {
             "gender": "female",
@@ -284,43 +474,205 @@
           "speaker": "SPEAKER_02",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 138.99
+            "median_f0": 98.99
           },
           "model_method": {
             "gender": "male",
-            "confidence": 0.9
+            "confidence": 0.999
           },
           "final_gender": "male",
-          "confidence": 0.9,
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_03": {
+          "speaker": "SPEAKER_03",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 103.44
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
           "agreement": true
         }
       },
-      "processing_time_seconds": 6.88
+      "processing_time_seconds": 23.67
     },
     {
-      "audio": "Segunda tanda. Video 12 Interactive",
+      "audio": "36.1 Intensive Care clinical pharmacy skills",
       "status": "success",
-      "n_speakers": 6,
+      "n_speakers": 8,
       "results": {
-        "SPEAKER_02": {
-          "speaker": "SPEAKER_02",
+        "SPEAKER_04": {
+          "speaker": "SPEAKER_04",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 133.49
+            "median_f0": 164.79
           },
           "model_method": {
             "gender": "male",
-            "confidence": 0.998
+            "confidence": 0.999
           },
           "final_gender": "male",
-          "confidence": 0.998,
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_01": {
+          "speaker": "SPEAKER_01",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 112.48
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
           "agreement": true
         },
         "SPEAKER_03": {
           "speaker": "SPEAKER_03",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 96.59
+            "median_f0": 155.49
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.996
+          },
+          "final_gender": "female",
+          "confidence": 0.996,
+          "agreement": false
+        },
+        "SPEAKER_00": {
+          "speaker": "SPEAKER_00",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 190.68
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_07": {
+          "speaker": "SPEAKER_07",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 89.02
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_05": {
+          "speaker": "SPEAKER_05",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 115.28
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_06": {
+          "speaker": "SPEAKER_06",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 104.58
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_02": {
+          "speaker": "SPEAKER_02",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 212.74
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.998
+          },
+          "final_gender": "female",
+          "confidence": 0.998,
+          "agreement": true
+        }
+      },
+      "processing_time_seconds": 9.51
+    },
+    {
+      "audio": "36.2 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_speakers": 8,
+      "results": {
+        "SPEAKER_05": {
+          "speaker": "SPEAKER_05",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 107.16
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_07": {
+          "speaker": "SPEAKER_07",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 113.04
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_06": {
+          "speaker": "SPEAKER_06",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 153.68
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.998
+          },
+          "final_gender": "female",
+          "confidence": 0.998,
+          "agreement": false
+        },
+        "SPEAKER_02": {
+          "speaker": "SPEAKER_02",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 114.83
           },
           "model_method": {
             "gender": "male",
@@ -334,7 +686,7 @@
           "speaker": "SPEAKER_01",
           "pitch_method": {
             "gender": "female",
-            "median_f0": 202.75
+            "median_f0": 223.11
           },
           "model_method": {
             "gender": "female",
@@ -344,11 +696,25 @@
           "confidence": 0.999,
           "agreement": true
         },
+        "SPEAKER_03": {
+          "speaker": "SPEAKER_03",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 112.3
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
         "SPEAKER_00": {
           "speaker": "SPEAKER_00",
           "pitch_method": {
             "gender": "female",
-            "median_f0": 195.61
+            "median_f0": 217.32
           },
           "model_method": {
             "gender": "female",
@@ -362,21 +728,183 @@
           "speaker": "SPEAKER_04",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 158.59
+            "median_f0": 127.07
           },
           "model_method": {
             "gender": "male",
-            "confidence": 0.987
+            "confidence": 0.998
           },
           "final_gender": "male",
-          "confidence": 0.987,
+          "confidence": 0.998,
+          "agreement": true
+        }
+      },
+      "processing_time_seconds": 15.56
+    },
+    {
+      "audio": "36.3 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_speakers": 12,
+      "results": {
+        "SPEAKER_01": {
+          "speaker": "SPEAKER_01",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 233.14
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.998
+          },
+          "final_gender": "female",
+          "confidence": 0.998,
+          "agreement": true
+        },
+        "SPEAKER_09": {
+          "speaker": "SPEAKER_09",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 128.85
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_07": {
+          "speaker": "SPEAKER_07",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 110.71
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_00": {
+          "speaker": "SPEAKER_00",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 174.04
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_02": {
+          "speaker": "SPEAKER_02",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 141.25
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_11": {
+          "speaker": "SPEAKER_11",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 115.38
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_06": {
+          "speaker": "SPEAKER_06",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 156.6
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.998
+          },
+          "final_gender": "female",
+          "confidence": 0.998,
+          "agreement": false
+        },
+        "SPEAKER_10": {
+          "speaker": "SPEAKER_10",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 126.76
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_03": {
+          "speaker": "SPEAKER_03",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 141.83
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_08": {
+          "speaker": "SPEAKER_08",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 116.52
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_04": {
+          "speaker": "SPEAKER_04",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 108.1
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
           "agreement": true
         },
         "SPEAKER_05": {
           "speaker": "SPEAKER_05",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 100.18
+            "median_f0": 119.59
           },
           "model_method": {
             "gender": "male",
@@ -387,10 +915,194 @@
           "agreement": true
         }
       },
-      "processing_time_seconds": 18.91
+      "processing_time_seconds": 28.74
     },
     {
-      "audio": "Segunda tanda. Video 6. Global collab",
+      "audio": "38 parte 1",
+      "status": "skipped",
+      "n_speakers": 6,
+      "processing_time_seconds": 0.02
+    },
+    {
+      "audio": "38 parte 2",
+      "status": "skipped",
+      "n_speakers": 8,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "39",
+      "status": "skipped",
+      "n_speakers": 12,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "4",
+      "status": "skipped",
+      "n_speakers": 2,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "4 Clinical conundrums- BLING III why bother_",
+      "status": "skipped",
+      "n_speakers": 6,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "40",
+      "status": "skipped",
+      "n_speakers": 9,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "41",
+      "status": "skipped",
+      "n_speakers": 15,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "42",
+      "status": "skipped",
+      "n_speakers": 7,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "43",
+      "status": "skipped",
+      "n_speakers": 13,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "44",
+      "status": "skipped",
+      "n_speakers": 12,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "45",
+      "status": "skipped",
+      "n_speakers": 10,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "46_How_promote_inclusion_disability",
+      "status": "skipped",
+      "n_speakers": 10,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "47.Debate_admission_organ_donation",
+      "status": "skipped",
+      "n_speakers": 15,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "48.Balancing_PEEP_Elderly_patient_ARDS",
+      "status": "skipped",
+      "n_speakers": 11,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "49_Patient_fungi_respiratory_sample",
+      "status": "skipped",
+      "n_speakers": 6,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "5 bridging planetaryhealth and sustainable healthcare",
+      "status": "success",
+      "n_speakers": 4,
+      "results": {
+        "SPEAKER_01": {
+          "speaker": "SPEAKER_01",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 205.19
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_00": {
+          "speaker": "SPEAKER_00",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 178.95
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_03": {
+          "speaker": "SPEAKER_03",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 150.87
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_02": {
+          "speaker": "SPEAKER_02",
+          "pitch_method": {
+            "gender": "male",
+            "median_f0": 125.58
+          },
+          "model_method": {
+            "gender": "male",
+            "confidence": 0.999
+          },
+          "final_gender": "male",
+          "confidence": 0.999,
+          "agreement": true
+        }
+      },
+      "processing_time_seconds": 7.28
+    },
+    {
+      "audio": "50.Reconciliating_needs_families_nurses",
+      "status": "skipped",
+      "n_speakers": 11,
+      "processing_time_seconds": 0.02
+    },
+    {
+      "audio": "51. Dose_duration_RRT",
+      "status": "skipped",
+      "n_speakers": 10,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "52.Organ_failure_assessment",
+      "status": "skipped",
+      "n_speakers": 10,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "53_Should_intensivist_be_in_ED",
+      "status": "skipped",
+      "n_speakers": 8,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "6 Immunomodulation in severe infections- Tool or toy_ ",
+      "status": "skipped",
+      "n_speakers": 8,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "7 global challenges in intensive care",
       "status": "success",
       "n_speakers": 4,
       "results": {
@@ -398,7 +1110,7 @@
           "speaker": "SPEAKER_03",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 125.6
+            "median_f0": 120.0
           },
           "model_method": {
             "gender": "male",
@@ -408,11 +1120,11 @@
           "confidence": 0.999,
           "agreement": true
         },
-        "SPEAKER_00": {
-          "speaker": "SPEAKER_00",
+        "SPEAKER_02": {
+          "speaker": "SPEAKER_02",
           "pitch_method": {
             "gender": "female",
-            "median_f0": 173.93
+            "median_f0": 197.79
           },
           "model_method": {
             "gender": "female",
@@ -422,11 +1134,11 @@
           "confidence": 0.999,
           "agreement": true
         },
-        "SPEAKER_02": {
-          "speaker": "SPEAKER_02",
+        "SPEAKER_00": {
+          "speaker": "SPEAKER_00",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 131.1
+            "median_f0": 141.86
           },
           "model_method": {
             "gender": "male",
@@ -440,92 +1152,134 @@
           "speaker": "SPEAKER_01",
           "pitch_method": {
             "gender": "male",
-            "median_f0": 142.78
+            "median_f0": 151.23
           },
           "model_method": {
-            "gender": "male",
-            "confidence": 0.999
+            "gender": "female",
+            "confidence": 0.805
           },
-          "final_gender": "male",
-          "confidence": 0.999,
-          "agreement": true
+          "final_gender": "female",
+          "confidence": 0.805,
+          "agreement": false
         }
       },
-      "processing_time_seconds": 12.96
+      "processing_time_seconds": 8.02
     },
     {
-      "audio": "Srgunda tanda. Video 8 3G Giant",
+      "audio": "8 How should Intensive Care adapt to cope with the wave of an aging population_",
+      "status": "skipped",
+      "n_speakers": 11,
+      "processing_time_seconds": 0.02
+    },
+    {
+      "audio": "9 Families in ICU- Where to go from here_",
       "status": "success",
       "n_speakers": 3,
       "results": {
-        "SPEAKER_01": {
-          "speaker": "SPEAKER_01",
-          "pitch_method": {
-            "gender": "male",
-            "median_f0": 146.71
-          },
-          "model_method": {
-            "gender": "female",
-            "confidence": 0.98
-          },
-          "final_gender": "female",
-          "confidence": 0.98,
-          "agreement": false
-        },
         "SPEAKER_00": {
           "speaker": "SPEAKER_00",
           "pitch_method": {
-            "gender": "male",
-            "median_f0": 134.66
+            "gender": "female",
+            "median_f0": 205.68
           },
           "model_method": {
-            "gender": "male",
+            "gender": "female",
             "confidence": 0.999
           },
-          "final_gender": "male",
+          "final_gender": "female",
           "confidence": 0.999,
           "agreement": true
         },
         "SPEAKER_02": {
           "speaker": "SPEAKER_02",
           "pitch_method": {
-            "gender": "male",
-            "median_f0": 131.92
+            "gender": "female",
+            "median_f0": 180.74
           },
           "model_method": {
-            "gender": "male",
+            "gender": "female",
             "confidence": 0.999
           },
-          "final_gender": "male",
+          "final_gender": "female",
+          "confidence": 0.999,
+          "agreement": true
+        },
+        "SPEAKER_01": {
+          "speaker": "SPEAKER_01",
+          "pitch_method": {
+            "gender": "female",
+            "median_f0": 206.41
+          },
+          "model_method": {
+            "gender": "female",
+            "confidence": 0.999
+          },
+          "final_gender": "female",
           "confidence": 0.999,
           "agreement": true
         }
       },
-      "processing_time_seconds": 8.01
+      "processing_time_seconds": 5.31
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09",
+      "status": "skipped",
+      "n_speakers": 7,
+      "processing_time_seconds": 0.02
+    },
+    {
+      "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09 (1)",
+      "status": "skipped",
+      "n_speakers": 7,
+      "processing_time_seconds": 0.0
+    },
+    {
+      "audio": "Segunda tanda. Video 10 Young voices",
+      "status": "skipped",
+      "n_speakers": 4,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "Segunda tanda. Video 12 Interactive",
+      "status": "skipped",
+      "n_speakers": 6,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "Segunda tanda. Video 6. Global collab",
+      "status": "skipped",
+      "n_speakers": 4,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "Srgunda tanda. Video 8 3G Giant",
+      "status": "skipped",
+      "n_speakers": 3,
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 1 Therapeutic challanges-011",
       "status": "skipped",
       "n_speakers": 12,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 11 When intubating",
       "status": "skipped",
       "n_speakers": 8,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 13 How to tackle-003",
       "status": "skipped",
       "n_speakers": 10,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 15 debate-017",
       "status": "skipped",
       "n_speakers": 11,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 17 Controversies-004",
@@ -543,7 +1297,7 @@
       "audio": "Video 21 Should we monitorize-007",
       "status": "skipped",
       "n_speakers": 11,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 23 A young man -009",
@@ -555,13 +1309,13 @@
       "audio": "Video 25 Joint with SMAAR-005",
       "status": "skipped",
       "n_speakers": 13,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 27 Can AI help-015",
       "status": "skipped",
       "n_speakers": 13,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 29 How to cope-010",
@@ -573,49 +1327,49 @@
       "audio": "Video 3 emergency care workers-019",
       "status": "skipped",
       "n_speakers": 9,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 31 Critical illness is bad-012",
       "status": "skipped",
       "n_speakers": 8,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 33 Dynamic medication-006",
       "status": "skipped",
       "n_speakers": 11,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 35 Pro_con debate-014",
       "status": "skipped",
       "n_speakers": 11,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 37 Post-ICU syndrome-013",
       "status": "skipped",
       "n_speakers": 14,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 5 avoiding polypharmacy-001",
       "status": "skipped",
       "n_speakers": 9,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 7 independent pharmacist-016",
       "status": "skipped",
       "n_speakers": 10,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 9 How can I decide-008",
       "status": "skipped",
       "n_speakers": 14,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     }
   ]
 }

@@ -25,13 +25,17 @@ fuentes/diarization/
 fuentes/transcription/
 fuentes/gender_classification/  
 final_reports/csv/
+final_reports/csv_cleaned/
 final_reports/excel/
+final_reports/resultados/csv/
+logs
 
 # Archivos temporales
 *.log
 *.tmp
 *.bak
 *.swp
+*.json
 *~
 
 # OS

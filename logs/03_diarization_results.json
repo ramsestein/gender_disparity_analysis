@@ -1,45 +1,97 @@
 {
-  "timestamp": "2026-01-20T22:28:33.214782",
+  "timestamp": "2026-01-23T14:29:25.986042",
   "device": "cpu",
-  "total_audios": 51,
-  "successful": 5,
-  "skipped": 46,
+  "total_audios": 75,
+  "successful": 9,
+  "skipped": 66,
   "failed": 0,
-  "total_time_seconds": 1985.21,
-  "avg_time_per_audio": 397.04,
-  "total_speakers_detected": 463,
-  "total_overlaps_detected": 20,
+  "total_time_seconds": 3466.21,
+  "avg_time_per_audio": 385.13,
+  "total_speakers_detected": 652,
+  "total_overlaps_detected": 116,
   "results": [
     {
       "audio": "1",
       "status": "skipped",
       "n_speakers": 3,
       "n_segments": 120,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
+    },
+    {
+      "audio": "10 Large Language Model for your ICU- Revolution or risk_",
+      "status": "skipped",
+      "n_speakers": 5,
+      "n_segments": 240,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "11 A conversation with the 2025 ESICM HonoraryMembers",
+      "status": "success",
+      "n_speakers": 4,
+      "n_segments": 117,
+      "n_overlaps": 3,
+      "total_overlap_seconds": 7.17,
+      "duration_seconds": 1262.6,
+      "processing_time_seconds": 282.45
+    },
+    {
+      "audio": "12 Perioperative anticoagulation management for the critically ill patient- When to start and stop medications_",
+      "status": "skipped",
+      "n_speakers": 8,
+      "n_segments": 439,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_",
+      "status": "success",
+      "n_speakers": 8,
+      "n_segments": 319,
+      "n_overlaps": 2,
+      "total_overlap_seconds": 32.67,
+      "duration_seconds": 2894.68,
+      "processing_time_seconds": 699.8
+    },
+    {
+      "audio": "14 Joint with JSICM - How do we approach hemoadsorption- Experience from Japan and Europe",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 409,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "18 Joint with SCCM - Evolving ICU advanced practice providers experience around the world",
+      "status": "skipped",
+      "n_speakers": 12,
+      "n_segments": 384,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "2 ECLS- what's new and should I change my practice_",
+      "status": "skipped",
+      "n_speakers": 9,
+      "n_segments": 414,
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.14.Defining_goal_frail_patient",
       "status": "skipped",
       "n_speakers": 16,
       "n_segments": 302,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "2.15_InteractiveLecture_RespiratoryMonitoring",
-      "status": "success",
+      "status": "skipped",
       "n_speakers": 4,
       "n_segments": 314,
-      "n_overlaps": 2,
-      "total_overlap_seconds": 1.64,
-      "duration_seconds": 3090.33,
-      "processing_time_seconds": 617.6
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.16.ICM_Review_1",
       "status": "skipped",
       "n_speakers": 7,
       "n_segments": 116,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2.17.ICM_Review_2",
@@ -53,126 +105,232 @@
       "status": "skipped",
       "n_speakers": 7,
       "n_segments": 158,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "2",
       "status": "skipped",
       "n_speakers": 2,
       "n_segments": 75,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "20 The consensus guideline on shock and haemodynamic monitoring- Why should I follow it_",
+      "status": "skipped",
+      "n_speakers": 12,
+      "n_segments": 302,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "22 Blood purification in sepsis- Fantasy or progress_",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 198,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "24 Spontaneous Breathing Trials- Controversies",
+      "status": "skipped",
+      "n_speakers": 14,
+      "n_segments": 340,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "26 When does organ inflammation escalate into ARDS_ ",
+      "status": "skipped",
+      "n_speakers": 7,
+      "n_segments": 348,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "28 Can we trust our microbiological diagnostics_",
+      "status": "skipped",
+      "n_speakers": 8,
+      "n_segments": 203,
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "3",
       "status": "skipped",
       "n_speakers": 5,
       "n_segments": 83,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "30",
       "status": "skipped",
       "n_speakers": 9,
       "n_segments": 353,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "32 Debate - Post-ICU outpatient clinic- Does it change my patient outcomes_",
+      "status": "skipped",
+      "n_speakers": 5,
+      "n_segments": 276,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_",
+      "status": "success",
+      "n_speakers": 13,
+      "n_segments": 301,
+      "n_overlaps": 10,
+      "total_overlap_seconds": 13.88,
+      "duration_seconds": 2573.5,
+      "processing_time_seconds": 577.52
+    },
+    {
+      "audio": "36.1 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_speakers": 8,
+      "n_segments": 258,
+      "n_overlaps": 40,
+      "total_overlap_seconds": 180.29,
+      "duration_seconds": 1254.4,
+      "processing_time_seconds": 277.4
+    },
+    {
+      "audio": "36.2 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_speakers": 8,
+      "n_segments": 118,
+      "n_overlaps": 12,
+      "total_overlap_seconds": 38.41,
+      "duration_seconds": 1098.39,
+      "processing_time_seconds": 257.03
+    },
+    {
+      "audio": "36.3 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_speakers": 12,
+      "n_segments": 351,
+      "n_overlaps": 40,
+      "total_overlap_seconds": 405.32,
+      "duration_seconds": 2495.69,
+      "processing_time_seconds": 561.06
+    },
+    {
+      "audio": "38 parte 1",
+      "status": "skipped",
+      "n_speakers": 6,
+      "n_segments": 97,
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "38 parte 2",
       "status": "skipped",
       "n_speakers": 8,
       "n_segments": 129,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "39",
       "status": "skipped",
       "n_speakers": 12,
       "n_segments": 266,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "4 Clinical conundrums- BLING III why bother_",
+      "status": "skipped",
+      "n_speakers": 6,
+      "n_segments": 152,
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "4",
       "status": "skipped",
       "n_speakers": 2,
       "n_segments": 90,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "40",
       "status": "skipped",
       "n_speakers": 9,
       "n_segments": 379,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "41",
       "status": "skipped",
       "n_speakers": 15,
       "n_segments": 337,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "42",
       "status": "skipped",
       "n_speakers": 7,
       "n_segments": 357,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "43",
       "status": "skipped",
       "n_speakers": 13,
       "n_segments": 403,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "44",
       "status": "skipped",
       "n_speakers": 12,
       "n_segments": 420,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "45",
       "status": "skipped",
       "n_speakers": 10,
       "n_segments": 449,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.03
     },
     {
       "audio": "46_How_promote_inclusion_disability",
       "status": "skipped",
       "n_speakers": 10,
       "n_segments": 234,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "47.Debate_admission_organ_donation",
       "status": "skipped",
       "n_speakers": 15,
       "n_segments": 426,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "48.Balancing_PEEP_Elderly_patient_ARDS",
       "status": "skipped",
       "n_speakers": 11,
       "n_segments": 275,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "49_Patient_fungi_respiratory_sample",
       "status": "skipped",
       "n_speakers": 6,
       "n_segments": 261,
-      "processing_time_seconds": 0.01
+      "processing_time_seconds": 0.02
+    },
+    {
+      "audio": "5 bridging planetaryhealth and sustainable healthcare",
+      "status": "success",
+      "n_speakers": 4,
+      "n_segments": 157,
+      "n_overlaps": 5,
+      "total_overlap_seconds": 14.39,
+      "duration_seconds": 1199.42,
+      "processing_time_seconds": 266.91
     },
     {
       "audio": "50.Reconciliating_needs_families_nurses",
       "status": "skipped",
       "n_speakers": 11,
       "n_segments": 261,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "51. Dose_duration_RRT",
@@ -186,21 +344,55 @@
       "status": "skipped",
       "n_speakers": 10,
       "n_segments": 272,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "53_Should_intensivist_be_in_ED",
       "status": "skipped",
       "n_speakers": 8,
       "n_segments": 188,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "6 Immunomodulation in severe infections- Tool or toy_ ",
+      "status": "skipped",
+      "n_speakers": 8,
+      "n_segments": 322,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "7 global challenges in intensive care",
+      "status": "success",
+      "n_speakers": 4,
+      "n_segments": 178,
+      "n_overlaps": 1,
+      "total_overlap_seconds": 2.56,
+      "duration_seconds": 1186.17,
+      "processing_time_seconds": 291.92
+    },
+    {
+      "audio": "8 How should Intensive Care adapt to cope with the wave of an aging population_",
+      "status": "skipped",
+      "n_speakers": 11,
+      "n_segments": 443,
+      "processing_time_seconds": 0.01
+    },
+    {
+      "audio": "9 Families in ICU- Where to go from here_",
+      "status": "success",
+      "n_speakers": 3,
+      "n_segments": 110,
+      "n_overlaps": 3,
+      "total_overlap_seconds": 14.77,
+      "duration_seconds": 1127.13,
+      "processing_time_seconds": 247.79
     },
     {
       "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09 (1)",
       "status": "skipped",
       "n_speakers": 7,
       "n_segments": 87,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09",
@@ -211,113 +403,101 @@
     },
     {
       "audio": "Segunda tanda. Video 10 Young voices",
-      "status": "success",
+      "status": "skipped",
       "n_speakers": 4,
       "n_segments": 119,
-      "n_overlaps": 1,
-      "total_overlap_seconds": 1.15,
-      "duration_seconds": 961.92,
-      "processing_time_seconds": 198.17
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Segunda tanda. Video 12 Interactive",
-      "status": "success",
+      "status": "skipped",
       "n_speakers": 6,
       "n_segments": 263,
-      "n_overlaps": 4,
-      "total_overlap_seconds": 7.2,
-      "duration_seconds": 3012.83,
-      "processing_time_seconds": 647.18
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Segunda tanda. Video 6. Global collab",
-      "status": "success",
+      "status": "skipped",
       "n_speakers": 4,
       "n_segments": 151,
-      "n_overlaps": 9,
-      "total_overlap_seconds": 68.64,
-      "duration_seconds": 1205.61,
-      "processing_time_seconds": 255.06
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Srgunda tanda. Video 8 3G Giant",
-      "status": "success",
+      "status": "skipped",
       "n_speakers": 3,
       "n_segments": 107,
-      "n_overlaps": 4,
-      "total_overlap_seconds": 25.44,
-      "duration_seconds": 1247.63,
-      "processing_time_seconds": 264.18
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 1 Therapeutic challanges-011",
       "status": "skipped",
       "n_speakers": 12,
       "n_segments": 452,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 11 When intubating",
       "status": "skipped",
       "n_speakers": 8,
       "n_segments": 411,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Video 13 How to tackle-003",
       "status": "skipped",
       "n_speakers": 10,
       "n_segments": 279,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 15 debate-017",
       "status": "skipped",
       "n_speakers": 11,
       "n_segments": 496,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 17 Controversies-004",
       "status": "skipped",
       "n_speakers": 11,
       "n_segments": 476,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Video 19 To feed-002",
       "status": "skipped",
       "n_speakers": 12,
       "n_segments": 232,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 21 Should we monitorize-007",
       "status": "skipped",
       "n_speakers": 11,
       "n_segments": 279,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 23 A young man -009",
       "status": "skipped",
       "n_speakers": 7,
       "n_segments": 250,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Video 25 Joint with SMAAR-005",
       "status": "skipped",
       "n_speakers": 13,
       "n_segments": 298,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Video 27 Can AI help-015",
       "status": "skipped",
       "n_speakers": 13,
       "n_segments": 320,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 29 How to cope-010",
@@ -331,56 +511,56 @@
       "status": "skipped",
       "n_speakers": 9,
       "n_segments": 373,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 31 Critical illness is bad-012",
       "status": "skipped",
       "n_speakers": 8,
       "n_segments": 232,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 33 Dynamic medication-006",
       "status": "skipped",
       "n_speakers": 11,
       "n_segments": 356,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Video 35 Pro_con debate-014",
       "status": "skipped",
       "n_speakers": 11,
       "n_segments": 368,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Video 37 Post-ICU syndrome-013",
       "status": "skipped",
       "n_speakers": 14,
       "n_segments": 354,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 5 avoiding polypharmacy-001",
       "status": "skipped",
       "n_speakers": 9,
       "n_segments": 360,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.02
     },
     {
       "audio": "Video 7 independent pharmacist-016",
       "status": "skipped",
       "n_speakers": 10,
       "n_segments": 322,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     },
     {
       "audio": "Video 9 How can I decide-008",
       "status": "skipped",
       "n_speakers": 14,
       "n_segments": 341,
-      "processing_time_seconds": 0.0
+      "processing_time_seconds": 0.01
     }
   ]
 }

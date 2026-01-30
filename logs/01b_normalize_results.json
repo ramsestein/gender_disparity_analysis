@@ -1,17 +1,52 @@
 {
-  "timestamp": "2026-01-20T21:55:11.772313",
+  "timestamp": "2026-01-23T13:21:17.875433",
   "noise_reduction_enabled": true,
-  "total_audios": 51,
-  "successful": 5,
-  "skipped": 46,
+  "total_audios": 75,
+  "successful": 9,
+  "skipped": 66,
   "failed": 0,
-  "total_time_seconds": 265.33,
-  "avg_time_per_audio": 53.07,
+  "total_time_seconds": 377.54,
+  "avg_time_per_audio": 41.95,
   "results": [
     {
       "audio": "1.wav",
       "status": "skipped",
       "size_mb": 37.22
+    },
+    {
+      "audio": "10 Large Language Model for your ICU- Revolution or risk_.wav",
+      "status": "skipped",
+      "size_mb": 75.13
+    },
+    {
+      "audio": "11 A conversation with the 2025 ESICM HonoraryMembers.wav",
+      "status": "success",
+      "size_mb": 38.8
+    },
+    {
+      "audio": "12 Perioperative anticoagulation management for the critically ill patient- When to start and stop medications_.wav",
+      "status": "skipped",
+      "size_mb": 79.57
+    },
+    {
+      "audio": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_.wav",
+      "status": "success",
+      "size_mb": 88.47
+    },
+    {
+      "audio": "14 Joint with JSICM - How do we approach hemoadsorption- Experience from Japan and Europe.wav",
+      "status": "skipped",
+      "size_mb": 72.36
+    },
+    {
+      "audio": "18 Joint with SCCM - Evolving ICU advanced practice providers experience around the world.wav",
+      "status": "skipped",
+      "size_mb": 76.46
+    },
+    {
+      "audio": "2 ECLS- what's new and should I change my practice_.wav",
+      "status": "skipped",
+      "size_mb": 75.59
     },
     {
       "audio": "2.14.Defining_goal_frail_patient.wav",
@@ -20,7 +55,7 @@
     },
     {
       "audio": "2.15_InteractiveLecture_RespiratoryMonitoring.wav",
-      "status": "success",
+      "status": "skipped",
       "size_mb": 94.35
     },
     {
@@ -44,6 +79,31 @@
       "size_mb": 28.53
     },
     {
+      "audio": "20 The consensus guideline on shock and haemodynamic monitoring- Why should I follow it_.wav",
+      "status": "skipped",
+      "size_mb": 79.59
+    },
+    {
+      "audio": "22 Blood purification in sepsis- Fantasy or progress_.wav",
+      "status": "skipped",
+      "size_mb": 69.83
+    },
+    {
+      "audio": "24 Spontaneous Breathing Trials- Controversies.wav",
+      "status": "skipped",
+      "size_mb": 74.96
+    },
+    {
+      "audio": "26 When does organ inflammation escalate into ARDS_ .wav",
+      "status": "skipped",
+      "size_mb": 77.85
+    },
+    {
+      "audio": "28 Can we trust our microbiological diagnostics_.wav",
+      "status": "skipped",
+      "size_mb": 79.73
+    },
+    {
       "audio": "3.wav",
       "status": "skipped",
       "size_mb": 33.55
@@ -54,6 +114,36 @@
       "size_mb": 75.39
     },
     {
+      "audio": "32 Debate - Post-ICU outpatient clinic- Does it change my patient outcomes_.wav",
+      "status": "skipped",
+      "size_mb": 83.22
+    },
+    {
+      "audio": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_.wav",
+      "status": "success",
+      "size_mb": 78.61
+    },
+    {
+      "audio": "36.1 Intensive Care clinical pharmacy skills.wav",
+      "status": "success",
+      "size_mb": 38.28
+    },
+    {
+      "audio": "36.2 Intensive Care clinical pharmacy skills.wav",
+      "status": "success",
+      "size_mb": 33.53
+    },
+    {
+      "audio": "36.3 Intensive Care clinical pharmacy skills.wav",
+      "status": "success",
+      "size_mb": 76.24
+    },
+    {
+      "audio": "38 parte 1.wav",
+      "status": "skipped",
+      "size_mb": 35.77
+    },
+    {
       "audio": "38 parte 2.wav",
       "status": "skipped",
       "size_mb": 45.97
@@ -62,6 +152,11 @@
       "audio": "39.wav",
       "status": "skipped",
       "size_mb": 80.73
+    },
+    {
+      "audio": "4 Clinical conundrums- BLING III why bother_.wav",
+      "status": "skipped",
+      "size_mb": 72.99
     },
     {
       "audio": "4.wav",
@@ -119,6 +214,11 @@
       "size_mb": 74.24
     },
     {
+      "audio": "5 bridging planetaryhealth and sustainable healthcare.wav",
+      "status": "success",
+      "size_mb": 36.67
+    },
+    {
       "audio": "50.Reconciliating_needs_families_nurses.wav",
       "status": "skipped",
       "size_mb": 66.63
@@ -139,6 +239,26 @@
       "size_mb": 78.77
     },
     {
+      "audio": "6 Immunomodulation in severe infections- Tool or toy_ .wav",
+      "status": "skipped",
+      "size_mb": 73.91
+    },
+    {
+      "audio": "7 global challenges in intensive care.wav",
+      "status": "success",
+      "size_mb": 36.26
+    },
+    {
+      "audio": "8 How should Intensive Care adapt to cope with the wave of an aging population_.wav",
+      "status": "skipped",
+      "size_mb": 81.86
+    },
+    {
+      "audio": "9 Families in ICU- Where to go from here_.wav",
+      "status": "success",
+      "size_mb": 34.46
+    },
+    {
       "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09 (1).wav",
       "status": "skipped",
       "size_mb": 35.08
@@ -150,22 +270,22 @@
     },
     {
       "audio": "Segunda tanda. Video 10 Young voices.wav",
-      "status": "success",
+      "status": "skipped",
       "size_mb": 29.52
     },
     {
       "audio": "Segunda tanda. Video 12 Interactive.wav",
-      "status": "success",
+      "status": "skipped",
       "size_mb": 92.34
     },
     {
       "audio": "Segunda tanda. Video 6. Global collab.wav",
-      "status": "success",
+      "status": "skipped",
       "size_mb": 37.03
     },
     {
       "audio": "Srgunda tanda. Video 8 3G Giant.wav",
-      "status": "success",
+      "status": "skipped",
       "size_mb": 38.28
     },
     {

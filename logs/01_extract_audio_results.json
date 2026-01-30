@@ -1,75 +1,127 @@
 {
-  "timestamp": "2026-01-20T21:48:00.321923",
-  "total_videos": 10,
-  "successful": 5,
-  "skipped": 5,
+  "timestamp": "2026-01-23T13:14:19.369231",
+  "total_videos": 18,
+  "successful": 9,
+  "skipped": 9,
   "failed": 0,
-  "total_time_seconds": 6.38,
-  "avg_time_per_video": 0.64,
+  "total_time_seconds": 8.37,
+  "avg_time_per_video": 0.47,
   "results": [
     {
-      "video": "2.15_InteractiveLecture_RespiratoryMonitoring.mp4",
-      "audio": "2.15_InteractiveLecture_RespiratoryMonitoring.wav",
+      "video": "11 A conversation with the 2025 ESICM HonoraryMembers.mov",
+      "audio": "11 A conversation with the 2025 ESICM HonoraryMembers.wav",
       "status": "success",
-      "size_mb": 94.35
+      "size_mb": 38.8
     },
     {
-      "video": "2.15_InteractiveLecture_RespiratoryMonitoring.mp4",
-      "audio": "2.15_InteractiveLecture_RespiratoryMonitoring.wav",
+      "video": "11 A conversation with the 2025 ESICM HonoraryMembers.mov",
+      "audio": "11 A conversation with the 2025 ESICM HonoraryMembers.wav",
       "status": "skipped",
-      "size_mb": 94.35,
+      "size_mb": 38.8,
       "message": "Already exists"
     },
     {
-      "video": "Segunda tanda. Video 10 Young voices.mov",
-      "audio": "Segunda tanda. Video 10 Young voices.wav",
+      "video": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_.mov",
+      "audio": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_.wav",
       "status": "success",
-      "size_mb": 29.52
+      "size_mb": 88.47
     },
     {
-      "video": "Segunda tanda. Video 10 Young voices.mov",
-      "audio": "Segunda tanda. Video 10 Young voices.wav",
+      "video": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_.mov",
+      "audio": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_.wav",
       "status": "skipped",
-      "size_mb": 29.52,
+      "size_mb": 88.47,
       "message": "Already exists"
     },
     {
-      "video": "Segunda tanda. Video 12 Interactive.mov",
-      "audio": "Segunda tanda. Video 12 Interactive.wav",
+      "video": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_.mov",
+      "audio": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_.wav",
       "status": "success",
-      "size_mb": 92.34
+      "size_mb": 78.61
     },
     {
-      "video": "Segunda tanda. Video 12 Interactive.mov",
-      "audio": "Segunda tanda. Video 12 Interactive.wav",
+      "video": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_.mov",
+      "audio": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_.wav",
       "status": "skipped",
-      "size_mb": 92.34,
+      "size_mb": 78.61,
       "message": "Already exists"
     },
     {
-      "video": "Segunda tanda. Video 6. Global collab.mov",
-      "audio": "Segunda tanda. Video 6. Global collab.wav",
-      "status": "success",
-      "size_mb": 37.03
-    },
-    {
-      "video": "Segunda tanda. Video 6. Global collab.mov",
-      "audio": "Segunda tanda. Video 6. Global collab.wav",
-      "status": "skipped",
-      "size_mb": 37.03,
-      "message": "Already exists"
-    },
-    {
-      "video": "Srgunda tanda. Video 8 3G Giant.mov",
-      "audio": "Srgunda tanda. Video 8 3G Giant.wav",
+      "video": "36.1 Intensive Care clinical pharmacy skills.mov",
+      "audio": "36.1 Intensive Care clinical pharmacy skills.wav",
       "status": "success",
       "size_mb": 38.28
     },
     {
-      "video": "Srgunda tanda. Video 8 3G Giant.mov",
-      "audio": "Srgunda tanda. Video 8 3G Giant.wav",
+      "video": "36.1 Intensive Care clinical pharmacy skills.mov",
+      "audio": "36.1 Intensive Care clinical pharmacy skills.wav",
       "status": "skipped",
       "size_mb": 38.28,
+      "message": "Already exists"
+    },
+    {
+      "video": "36.2 Intensive Care clinical pharmacy skills.mov",
+      "audio": "36.2 Intensive Care clinical pharmacy skills.wav",
+      "status": "success",
+      "size_mb": 33.53
+    },
+    {
+      "video": "36.2 Intensive Care clinical pharmacy skills.mov",
+      "audio": "36.2 Intensive Care clinical pharmacy skills.wav",
+      "status": "skipped",
+      "size_mb": 33.53,
+      "message": "Already exists"
+    },
+    {
+      "video": "36.3 Intensive Care clinical pharmacy skills.mov",
+      "audio": "36.3 Intensive Care clinical pharmacy skills.wav",
+      "status": "success",
+      "size_mb": 76.24
+    },
+    {
+      "video": "36.3 Intensive Care clinical pharmacy skills.mov",
+      "audio": "36.3 Intensive Care clinical pharmacy skills.wav",
+      "status": "skipped",
+      "size_mb": 76.24,
+      "message": "Already exists"
+    },
+    {
+      "video": "5 bridging planetaryhealth and sustainable healthcare.mov",
+      "audio": "5 bridging planetaryhealth and sustainable healthcare.wav",
+      "status": "success",
+      "size_mb": 36.67
+    },
+    {
+      "video": "5 bridging planetaryhealth and sustainable healthcare.mov",
+      "audio": "5 bridging planetaryhealth and sustainable healthcare.wav",
+      "status": "skipped",
+      "size_mb": 36.67,
+      "message": "Already exists"
+    },
+    {
+      "video": "7 global challenges in intensive care.mov",
+      "audio": "7 global challenges in intensive care.wav",
+      "status": "success",
+      "size_mb": 36.26
+    },
+    {
+      "video": "7 global challenges in intensive care.mov",
+      "audio": "7 global challenges in intensive care.wav",
+      "status": "skipped",
+      "size_mb": 36.26,
+      "message": "Already exists"
+    },
+    {
+      "video": "9 Families in ICU- Where to go from here_.mov",
+      "audio": "9 Families in ICU- Where to go from here_.wav",
+      "status": "success",
+      "size_mb": 34.46
+    },
+    {
+      "video": "9 Families in ICU- Where to go from here_.mov",
+      "audio": "9 Families in ICU- Where to go from here_.wav",
+      "status": "skipped",
+      "size_mb": 34.46,
       "message": "Already exists"
     }
   ]

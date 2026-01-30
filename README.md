@@ -21,9 +21,20 @@ El código se libera públicamente para permitir:
 - **Diarización** de speakers (quién habla cuándo)
 - **Transcripción** con Whisper (speech-to-text)
 - **Clasificación de género** con enfoque híbrido (pitch + modelo pre-entrenado)
-- **Reportes completos** en CSV y Excel con análisis de overlaps e interrupciones
+- **Análisis de sentimiento y emociones** con modelos BERT
+- **Índices de poder y conflictividad** calculados automáticamente
+- **Reportes académicos detallados** en Markdown
 
-## 🚀 Instalación Rápida (Para Usuarios Sin Experiencia)
+## 📚 Documentación Detallada de Investigación
+
+Para una comprensión profunda de la metodología y los hallazgos, consulta los siguientes documentos:
+
+- 🔬 [**Metodología Completa**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/METHOD.md): Detalle técnico del pipeline y marco estadístico.
+- 📊 [**Resultados del Estudio**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/SUMMARY_RESULTS.md): Síntesis de hallazgos y tablas comparativas.
+- 📖 [**Diccionario de Variables**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/DICCIONARIO_VARIABLES.md): Definiciones operacionales de todas las métricas.
+- 📉 [**Informe Estadístico Extenso**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/INFORME_STAT.md): Análisis inferencial y modelos de efectos mixtos.
+
+## 🚀 Instalación Rápida
 
 ### Requisitos Previos
 - **Python 3.8 o superior** instalado en tu sistema
@@ -142,6 +153,34 @@ Los reportes incluyen las siguientes columnas:
 | `interrupts_previous` | Si interrumpe al speaker anterior |
 | `interrupted_by_next` | Si es interrumpido por el siguiente |
 | `turn_number` | Número de turno en la conversación |
+| `sentiment` | Tono afectivo (Positive/Negative/Neutral) |
+| `emotion` | Categoría emocional (joy, anger, etc.) |
+| `conflict_score` | Grado de conflictividad del turno |
+| `assertiveness_score` | Nivel de asertividad directa |
+
+## 🧪 Metodología del Estudio
+
+El análisis se basa en un marco multidimensional de **10 pilares** que evalúan desde la acústica hasta la pragmática conversacional:
+
+1.  **Ingesta y Normalización:** Aplicación del estándar EBU R128 (-23 LUFS).
+2.  **Diarización Avanzada:** Uso de Pyannote 3.1 con embeddings ECAPA-TDNN.
+3.  **Doble Validación de Género:** Cruce de análisis de Pitch (F0) y modelos Transformer (Wav2Vec2).
+4.  **Transcripción Alineada:** OpenAI Whisper large-v2 segmentado por orador.
+5.  **Análisis Gramatical:** Detección de imperativos y diversidad léxica (TTR) vía spaCy.
+6.  **Análisis Pragmático:** Detección de *hedges*, acuerdos, desacuerdos y cortesía.
+7.  **Análisis Afectivo:** Sentimiento y emociones mediante modelos BERT.
+8.  **Dinámicas de Poder:** Índices de conflictividad, asertividad y eco léxico.
+9.  **Interacciones:** Análisis de transición de turnos, interrupciones y apropiación de ideas.
+10. **Modelado Estadístico:** Modelos de efectos mixtos y corrección FDR.
+
+## 📈 Resultados Principales
+
+El estudio realizado sobre **12,138 intervenciones** revela:
+
+- 🤝 **Segregación Discursiva:** Fuerte tendencia a transiciones intra-género (85% H→H; 75% M→M).
+- 🗣️ **Duración:** Las mujeres presentan intervenciones ligeramente más largas (+1.18s) y mayor expresión de desacuerdo.
+- 📉 **Tamaños del Efecto:** Aunque significativos, la mayoría de los efectos son de magnitud despreciable (|g| < 0.08), sugiriendo paridad en el estilo comunicativo bajo condiciones de debate estructurado.
+- ⚖️ **Equidad:** Un 15% de las sesiones alcanzan niveles de paridad funcional superiores al 0.85.
 
 ## 🔧 Configuración Avanzada
 

@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-01-20T22:39:12.938106",
-  "total_audios": 51,
-  "successful": 5,
-  "skipped": 46,
+  "timestamp": "2026-01-23T17:21:51.997498",
+  "total_audios": 75,
+  "successful": 9,
+  "skipped": 66,
   "failed": 0,
-  "total_time_seconds": 3.38,
-  "total_interventions": 14030,
-  "total_overlaps": 20,
-  "total_interruptions": 20,
+  "total_time_seconds": 1.95,
+  "total_interventions": 20506,
+  "total_overlaps": 116,
+  "total_interruptions": 116,
   "results": [
     {
       "audio": "1",
@@ -15,9 +15,66 @@
       "n_interventions": 120
     },
     {
+      "audio": "10 Large Language Model for your ICU- Revolution or risk_",
+      "status": "skipped",
+      "n_interventions": 240
+    },
+    {
+      "audio": "11 A conversation with the 2025 ESICM HonoraryMembers",
+      "status": "success",
+      "n_interventions": 117,
+      "n_turns": 52,
+      "n_overlaps": 3,
+      "n_interruptions": 3,
+      "gender_distribution": {
+        "male": 102,
+        "female": 15
+      },
+      "gender_duration": {
+        "female": 248.43,
+        "male": 944.71
+      }
+    },
+    {
+      "audio": "12 Perioperative anticoagulation management for the critically ill patient- When to start and stop medications_",
+      "status": "skipped",
+      "n_interventions": 439
+    },
+    {
+      "audio": "13 Interactive session - Is armcuff enough for monitoring extracorporeal support_",
+      "status": "success",
+      "n_interventions": 319,
+      "n_turns": 51,
+      "n_overlaps": 2,
+      "n_interruptions": 2,
+      "gender_distribution": {
+        "male": 293,
+        "female": 26
+      },
+      "gender_duration": {
+        "female": 417.11,
+        "male": 2207.78
+      }
+    },
+    {
+      "audio": "14 Joint with JSICM - How do we approach hemoadsorption- Experience from Japan and Europe",
+      "status": "skipped",
+      "n_interventions": 409
+    },
+    {
+      "audio": "18 Joint with SCCM - Evolving ICU advanced practice providers experience around the world",
+      "status": "skipped",
+      "n_interventions": 384
+    },
+    {
       "audio": "2",
       "status": "skipped",
       "n_interventions": 75
+    },
+    {
+      "audio": "2 ECLS- what's new and should I change my practice_",
+      "status": "skipped",
+      "n_interventions": 414
     },
     {
       "audio": "2.14.Defining_goal_frail_patient",
@@ -26,19 +83,8 @@
     },
     {
       "audio": "2.15_InteractiveLecture_RespiratoryMonitoring",
-      "status": "success",
-      "n_interventions": 314,
-      "n_turns": 32,
-      "n_overlaps": 2,
-      "n_interruptions": 2,
-      "gender_distribution": {
-        "female": 288,
-        "male": 26
-      },
-      "gender_duration": {
-        "female": 2573.26,
-        "male": 107.55
-      }
+      "status": "skipped",
+      "n_interventions": 314
     },
     {
       "audio": "2.16.ICM_Review_1",
@@ -56,6 +102,31 @@
       "n_interventions": 158
     },
     {
+      "audio": "20 The consensus guideline on shock and haemodynamic monitoring- Why should I follow it_",
+      "status": "skipped",
+      "n_interventions": 302
+    },
+    {
+      "audio": "22 Blood purification in sepsis- Fantasy or progress_",
+      "status": "skipped",
+      "n_interventions": 198
+    },
+    {
+      "audio": "24 Spontaneous Breathing Trials- Controversies",
+      "status": "skipped",
+      "n_interventions": 340
+    },
+    {
+      "audio": "26 When does organ inflammation escalate into ARDS_ ",
+      "status": "skipped",
+      "n_interventions": 348
+    },
+    {
+      "audio": "28 Can we trust our microbiological diagnostics_",
+      "status": "skipped",
+      "n_interventions": 203
+    },
+    {
       "audio": "3",
       "status": "skipped",
       "n_interventions": 83
@@ -64,6 +135,80 @@
       "audio": "30",
       "status": "skipped",
       "n_interventions": 353
+    },
+    {
+      "audio": "32 Debate - Post-ICU outpatient clinic- Does it change my patient outcomes_",
+      "status": "skipped",
+      "n_interventions": 276
+    },
+    {
+      "audio": "34 Fluid accumulation in critically ill patients- Inevitable consequence or feared complication_",
+      "status": "success",
+      "n_interventions": 301,
+      "n_turns": 84,
+      "n_overlaps": 10,
+      "n_interruptions": 10,
+      "gender_distribution": {
+        "male": 158,
+        "female": 143
+      },
+      "gender_duration": {
+        "female": 1204.99,
+        "male": 1141.31
+      }
+    },
+    {
+      "audio": "36.1 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_interventions": 258,
+      "n_turns": 135,
+      "n_overlaps": 40,
+      "n_interruptions": 40,
+      "gender_distribution": {
+        "male": 170,
+        "female": 88
+      },
+      "gender_duration": {
+        "female": 392.23,
+        "male": 772.81
+      }
+    },
+    {
+      "audio": "36.2 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_interventions": 118,
+      "n_turns": 57,
+      "n_overlaps": 12,
+      "n_interruptions": 12,
+      "gender_distribution": {
+        "male": 79,
+        "female": 39
+      },
+      "gender_duration": {
+        "female": 466.93,
+        "male": 569.12
+      }
+    },
+    {
+      "audio": "36.3 Intensive Care clinical pharmacy skills",
+      "status": "success",
+      "n_interventions": 351,
+      "n_turns": 174,
+      "n_overlaps": 40,
+      "n_interruptions": 40,
+      "gender_distribution": {
+        "male": 309,
+        "female": 42
+      },
+      "gender_duration": {
+        "female": 294.99,
+        "male": 2135.71
+      }
+    },
+    {
+      "audio": "38 parte 1",
+      "status": "skipped",
+      "n_interventions": 97
     },
     {
       "audio": "38 parte 2",
@@ -79,6 +224,11 @@
       "audio": "4",
       "status": "skipped",
       "n_interventions": 90
+    },
+    {
+      "audio": "4 Clinical conundrums- BLING III why bother_",
+      "status": "skipped",
+      "n_interventions": 152
     },
     {
       "audio": "40",
@@ -131,6 +281,22 @@
       "n_interventions": 261
     },
     {
+      "audio": "5 bridging planetaryhealth and sustainable healthcare",
+      "status": "success",
+      "n_interventions": 157,
+      "n_turns": 48,
+      "n_overlaps": 5,
+      "n_interruptions": 5,
+      "gender_distribution": {
+        "male": 113,
+        "female": 44
+      },
+      "gender_duration": {
+        "female": 459.01,
+        "male": 635.79
+      }
+    },
+    {
       "audio": "50.Reconciliating_needs_families_nurses",
       "status": "skipped",
       "n_interventions": 261
@@ -151,6 +317,46 @@
       "n_interventions": 188
     },
     {
+      "audio": "6 Immunomodulation in severe infections- Tool or toy_ ",
+      "status": "skipped",
+      "n_interventions": 322
+    },
+    {
+      "audio": "7 global challenges in intensive care",
+      "status": "success",
+      "n_interventions": 178,
+      "n_turns": 19,
+      "n_overlaps": 1,
+      "n_interruptions": 1,
+      "gender_distribution": {
+        "male": 171,
+        "female": 7
+      },
+      "gender_duration": {
+        "female": 219.33,
+        "male": 865.24
+      }
+    },
+    {
+      "audio": "8 How should Intensive Care adapt to cope with the wave of an aging population_",
+      "status": "skipped",
+      "n_interventions": 443
+    },
+    {
+      "audio": "9 Families in ICU- Where to go from here_",
+      "status": "success",
+      "n_interventions": 110,
+      "n_turns": 55,
+      "n_overlaps": 3,
+      "n_interruptions": 3,
+      "gender_distribution": {
+        "female": 110
+      },
+      "gender_duration": {
+        "female": 1072.32
+      }
+    },
+    {
       "audio": "Grabación de pantalla 2025-12-09 a la(s) 22.02.09",
       "status": "skipped",
       "n_interventions": 87
@@ -162,67 +368,23 @@
     },
     {
       "audio": "Segunda tanda. Video 10 Young voices",
-      "status": "success",
-      "n_interventions": 119,
-      "n_turns": 31,
-      "n_overlaps": 1,
-      "n_interruptions": 1,
-      "gender_distribution": {
-        "male": 61,
-        "female": 58
-      },
-      "gender_duration": {
-        "female": 416.8,
-        "male": 450.9
-      }
+      "status": "skipped",
+      "n_interventions": 119
     },
     {
       "audio": "Segunda tanda. Video 12 Interactive",
-      "status": "success",
-      "n_interventions": 263,
-      "n_turns": 39,
-      "n_overlaps": 4,
-      "n_interruptions": 4,
-      "gender_distribution": {
-        "female": 235,
-        "male": 28
-      },
-      "gender_duration": {
-        "female": 2555.86,
-        "male": 146.5
-      }
+      "status": "skipped",
+      "n_interventions": 263
     },
     {
       "audio": "Segunda tanda. Video 6. Global collab",
-      "status": "success",
-      "n_interventions": 151,
-      "n_turns": 56,
-      "n_overlaps": 9,
-      "n_interruptions": 9,
-      "gender_distribution": {
-        "male": 114,
-        "female": 37
-      },
-      "gender_duration": {
-        "female": 277.14,
-        "male": 859.23
-      }
+      "status": "skipped",
+      "n_interventions": 151
     },
     {
       "audio": "Srgunda tanda. Video 8 3G Giant",
-      "status": "success",
-      "n_interventions": 107,
-      "n_turns": 49,
-      "n_overlaps": 4,
-      "n_interruptions": 4,
-      "gender_distribution": {
-        "female": 65,
-        "male": 42
-      },
-      "gender_duration": {
-        "female": 365.01,
-        "male": 827.3
-      }
+      "status": "skipped",
+      "n_interventions": 107
     },
     {
       "audio": "Video 1 Therapeutic challanges-011",
