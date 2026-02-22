@@ -1146,7 +1146,7 @@
 
 ## 44. CONCLUSIONES ESTADÍSTICAS FINALES
 
-### 44.1 Hallazgos Significativos (p<0.05 tras FDR)
+### 44.1 Hallazgos Significativos a Nivel de Intervención (p<0.05 tras FDR)
 
 | Variable | Dirección | Hedges' g | Interpretación |
 |----------|-----------|-----------|----------------|
@@ -1175,13 +1175,222 @@
 | Apropriación ideas | M→F: 5.1%, F→M: 4.7% | Simétrico |
 | Preguntas ignoradas | F: 73.4%, M: 72.8% | Sin diferencia |
 
-### 44.4 Limitaciones Metodológicas
+### 44.4 Hallazgos del Análisis de Clusters
 
-1. **Tamaño del efecto**: Todos los efectos significativos son de magnitud despreciable (|g|<0.2)
+| Fenómeno | Hallazgo | Significancia |
+|----------|----------|---------------|
+| Segmentación de roles | 2 clusters: Moderadores (57.5%) vs Audiencia (42.5%) | Silhouette=0.161 |
+| Género × Cluster | Sin sesgo de género en asignación de roles | p=0.17 |
+| M moderadores: volumen | M hacen 19% más intervenciones que F (vs +10% general) | p<0.001 |
+| M moderadores: duración total | M acumulan 11.5% más tiempo que F (vs +0.4% general) | p=0.008 |
+| M audiencia: preguntas | M hacen 48% más preguntas que F (vs +12% general) | p=0.004 |
+| F audiencia: hedges | F usan 24% más hedges que M (vs −15% general) | p<0.001 |
+| Efecto llamada de género | %F mods ↔ %F audiencia: ρ=0.361 | p=0.004 |
+| Atracción categórica | Mods-F → 51.6% aud-F; Mods-M → 27.2% aud-F | OR=3.16 |
+
+### 44.5 Limitaciones Metodológicas
+
+1. **Tamaño del efecto**: Todos los efectos significativos a nivel de intervención son de magnitud despreciable (|g|<0.2)
 2. **ICC**: Valores cercanos a 0 indican baja variabilidad entre sesiones
 3. **Poder estadístico**: Adecuado (>0.8) para detectar efectos pequeños dado N=12,138
 4. **Múltiples comparaciones**: 5/19 variables sobrevivieron corrección FDR (83.3% falsos positivos controlados)
+5. **Clustering**: Silhouette Score bajo (0.161) indica clusters con solapamiento; la segmentación es interpretable pero no nítida
+6. **Causalidad del efecto llamada**: Correlación no implica causalidad; factores como el tema de la sesión podrían mediar la relación
 
 ---
 
-*Informe generado a partir del análisis estadístico completo del estudio de disparidad de género en debates científicos. Incluye 44 secciones con TODOS los resultados disponibles de los 64 archivos CSV del proyecto, las 75 sesiones individuales y los 2,272 pares pregunta-respuesta.*
+## 45. ANÁLISIS DE CLUSTERS: SEGMENTACIÓN DE ROLES
+
+### 45.1 Composición de Clusters (K-Means, k=2)
+
+| Cluster | Interpretación | N Usuarios | % Total | % Mujeres | % Hombres |
+|---------|---------------|------------|---------|-----------|-----------|
+| 0 | Moderadores/Panelistas | 375 | 57.5% | 34.1% | 65.9% |
+| 1 | Público/Audiencia | 277 | 42.5% | 38.3% | 61.7% |
+
+### 45.2 Selección de k Óptimo
+
+| Métrica | Valor |
+|---------|-------|
+| k evaluado | 2 a 10 |
+| k óptimo (Silhouette) | 2 |
+| Silhouette Score | 0.161 |
+| Concordancia K-Means vs Jerárquico (ARI) | Reportada en CSVs |
+
+### 45.3 Variables Más Discriminantes (Top 10, ANOVA)
+
+| Variable | F-statistic | p-valor |
+|----------|-------------|---------|
+| min_turn_number | — | <0.001 |
+| n_interventions | — | <0.001 |
+| mean_duration | — | <0.001 |
+| mean_word_count | — | <0.001 |
+| is_top3_speaker | — | <0.001 |
+| std_duration | — | <0.001 |
+| std_word_count | — | <0.001 |
+| pct_has_disagreement | — | <0.001 |
+| pct_has_hedge | — | <0.001 |
+| mean_echoing_score | — | <0.001 |
+
+### 45.4 Perfil de Clusters
+
+| Métrica | Cluster 0 (Mods) | Cluster 1 (Auds) | Diferencia |
+|---------|-------------------|-------------------|------------|
+| Turno mediano 1ª intervención | 3 | 35 | −32 |
+| % top-3 speakers | 58.9% | 0.7% | +58.2 pp |
+| Media intervenciones/usuario | Alta | Baja | — |
+| Media duración (s) | Alta | Baja | ~55% más |
+| Media palabras | Alta | Baja | ~55% más |
+| % disculpas | Menor | Mayor | +63% |
+| % emoción tristeza | Menor | Mayor | +41% |
+
+### 45.5 Distribución de Género por Cluster
+
+| Métrica | Valor |
+|---------|-------|
+| Chi-cuadrado (género × cluster) | χ²=— |
+| p-valor | 0.17 |
+| Interpretación | Sin diferencia significativa de género entre clusters |
+
+---
+
+## 46. DISTRIBUCIÓN DE CLUSTERS POR SESIÓN
+
+### 46.1 Homogeneidad
+
+| Métrica | Valor |
+|---------|-------|
+| Chi-cuadrado (sesión × cluster) | p = 0.025 |
+| Interpretación | Clusters NO distribuidos homogéneamente |
+| Cluster 0: presente en N/total sesiones | ~100% |
+| Cluster 1: presente en N/total sesiones | <100% (ausente en algunas sesiones) |
+
+---
+
+## 47. PRIMEROS HABLANTES POR CLUSTER
+
+### 47.1 Tasa de Top-3 Speakers
+
+| Cluster | N top-3 | N total | % top-3 |
+|---------|---------|---------|---------|
+| 0 (Moderadores) | 221 | 375 | 58.9% |
+| 1 (Audiencia) | 2 | 277 | 0.7% |
+
+### 47.2 Tests Estadísticos
+
+| Test | Estadístico | p-valor |
+|------|-------------|---------|
+| Chi-cuadrado (cluster × top3) | — | <0.001 |
+| Mann-Whitney U (min_turn_number) | — | <0.001 |
+
+---
+
+## 48. CRUCE CLUSTER × GÉNERO: DIFERENCIAS INTRA-ROL
+
+### 48.1 Diferencias Significativas Dentro de Cluster 0 — Moderadores (9 variables, p<0.05)
+
+| Variable | Dirección | Media M | Media F | Cohen's d | p-valor | Δ% intra-cluster | Δ% general |
+|----------|-----------|---------|---------|-----------|---------|-------------------|------------|
+| pct_is_mansplaining | M > F | 2.57% | 0.00% | +0.568 | <0.001*** | — | — |
+| n_interventions | M > F | 30.75 | 25.85 | +0.192 | <0.001*** | +19.0% | +10.3% |
+| max_assertiveness_score | M > F | 3.673 | 3.394 | +0.271 | 0.002** | +8.2% | +5.4% |
+| mean_lexical_diversity | M > F | 0.406 | 0.380 | +0.305 | 0.002** | +6.7% | +11.4% |
+| total_duration | M > F | 372.0s | 333.7s | +0.136 | 0.008** | +11.5% | +0.4% |
+| total_word_count | M > F | 1152.6 | 1025.8 | +0.149 | 0.009** | +12.4% | +0.9% |
+| mean_num_imperatives | M > F | 0.048 | 0.042 | +0.083 | 0.011* | +14.2% | +33.4% |
+| max_conflict_score | M > F | 2.232 | 2.071 | +0.265 | 0.013* | +7.8% | −1.4% |
+| pct_emo_anger | M > F | 0.35% | 0.06% | +0.245 | 0.020* | +448.1% | +330.6% |
+
+### 48.2 Diferencias Significativas Dentro de Cluster 1 — Audiencia (11 variables, p<0.05)
+
+| Variable | Dirección | Media M | Media F | Cohen's d | p-valor | Δ% intra-cluster | Δ% general |
+|----------|-----------|---------|---------|-----------|---------|-------------------|------------|
+| pct_has_hedge | F > M | 40.4% | 53.1% | −0.396 | <0.001*** | −23.9% | −15.0% |
+| mean_lexical_diversity | M > F | 0.429 | 0.363 | +0.444 | <0.001*** | +18.0% | +11.4% |
+| pct_is_question | M > F | 28.9% | 19.5% | +0.331 | 0.004** | +48.1% | +12.3% |
+| pct_is_mansplaining | M > F | 3.53% | 0.00% | +0.312 | 0.004** | — | — |
+| mean_assertiveness_score | M > F | 1.946 | 1.839 | +0.260 | 0.009** | +5.8% | +2.3% |
+| mean_duration | F > M | 16.56s | 19.35s | −0.148 | 0.015* | −14.4% | −13.1% |
+| pct_has_title | F > M | 6.0% | 7.4% | −0.076 | 0.018* | −18.9% | −14.5% |
+| pct_emo_joy | F > M | 0.95% | 3.59% | −0.325 | 0.028* | −73.7% | −36.7% |
+| pct_has_attribution | F > M | 6.48% | 7.40% | −0.049 | 0.040* | −12.4% | −10.3% |
+| std_duration | F > M | 8.95s | 11.47s | −0.274 | 0.043* | −22.0% | −13.9% |
+| mean_latency_s | F > M | 1.75s | 2.34s | −0.214 | 0.048* | −25.3% | −10.1% |
+
+### 48.3 Observaciones Clave
+
+**En moderadores (C0):** Los hombres dominan en volumen (19% más intervenciones, 12% más palabras) y asertividad. El explaining pattern (mansplaining) es exclusivamente masculino. La brecha *se amplifica* respecto al general en duración total (+11.5% vs +0.4%) y producción verbal (+12.4% vs +0.9%).
+
+**En audiencia (C1):** Las mujeres usan 24% más hedges que los hombres (vs −15% general → la brecha se amplifica en el rol de audiencia). Las mujeres tienen intervenciones más largas (+14.4%) y mayor variabilidad (+22%). Los hombres audiencia hacen 48% más preguntas que las mujeres audiencia (vs +12.3% general → la brecha se triplica). La emoción joy es 3.8× más frecuente en mujeres audiencia.
+
+*Nota: Δ% intra-cluster = (M−F)/F×100 dentro del cluster. Δ% general = (M−F)/F×100 sobre todos los usuarios. Comparar ambos indica amplificación (+) o atenuación (−) de la brecha según el rol.*
+
+---
+
+## 49. EFECTO LLAMADA DE GÉNERO (GENDER ATTRACTION EFFECT)
+
+### 49.1 Correlación %F Moderadores ↔ %F Audiencia por Sesión
+
+| Métrica | Valor |
+|---------|-------|
+| Spearman ρ | 0.361 |
+| p-valor | 0.004 |
+| Pearson r | Reportado en CSVs |
+| N sesiones (con ambos clusters) | 61 |
+
+### 49.2 Comparación Categórica
+
+| Tipo Moderadores | N sesiones | %F Audiencia (media) |
+|------------------|-----------|---------------------|
+| Mayoría Femenina (>50%F) | 12 | 51.6% |
+| Equitativo (50%) | 11 | 42.7% |
+| Mayoría Masculina (<50%F) | 38 | 27.2% |
+
+### 49.3 Tests de Asociación
+
+| Test | Estadístico | p-valor |
+|------|-------------|---------|
+| Mann-Whitney U (%F_aud: mods-F vs mods-M) | — | 0.031 |
+| Fisher's Exact Test (2×2) | OR = 3.16 | — |
+
+### 49.4 Interpretación
+
+Cuando los moderadores/panelistas son mayoritariamente femeninas, la proporción de mujeres en la audiencia casi se duplica (51.6% vs 27.2%). Este hallazgo sugiere un efecto de representación: la visibilidad femenina en posiciones de liderazgo correlaciona positivamente con la participación femenina en el público.
+
+---
+
+## 50. RANKING DE SESIONES POR COMPOSICIÓN DE GÉNERO
+
+### 50.1 Top 5 Sesiones Más Masculinas
+
+| # | Sesión | %F | N Mujeres | N Hombres |
+|---|--------|-----|-----------|-----------|
+| 1 | 45_report | 0% | 0 | 10 |
+| 2 | Srgunda tanda. Video 8 3G Giant | 0% | 0 | 3 |
+| 3 | 24 Spontaneous Breathing Trials | 7% | 1 | 13 |
+| 4 | 2 ECLS what's new | 11% | 1 | 8 |
+| 5 | 14 Joint JSICM hemoadsorption | 14% | 1 | 6 |
+
+### 50.2 Top 5 Sesiones Más Femeninas
+
+| # | Sesión | %F | N Mujeres | N Hombres |
+|---|--------|-----|-----------|-----------|
+| 1 | 9 Families in ICU | 100% | 3 | 0 |
+| 2 | 32 Debate Post-ICU outpatient | 80% | 4 | 1 |
+| 3 | 2.16.ICM_Review_1 | 71% | 5 | 2 |
+| 4 | 42_report | 71% | 5 | 2 |
+| 5 | Grabación 2025-12-09 (1) | 71% | 5 | 2 |
+
+### 50.3 Top 5 Sesiones Más Equitativas
+
+| # | Sesión | %F | N Mujeres | N Hombres |
+|---|--------|-----|-----------|-----------|
+| 1 | 2.14.Defining_goal_frail_patient | 50% | 8 | 8 |
+| 2 | 2.15_InteractiveLecture_Respiratory | 50% | 2 | 2 |
+| 3 | 2_report | 50% | 1 | 1 |
+| 4 | 49_Patient_fungi_respiratory | 50% | 3 | 3 |
+| 5 | 4_report | 50% | 1 | 1 |
+
+---
+
+*Informe generado a partir del análisis estadístico completo del estudio de disparidad de género en debates científicos. Incluye 50 secciones con TODOS los resultados disponibles, incluyendo análisis de clustering con segmentación de roles, diferencias intra-rol por género y efecto llamada de género.*

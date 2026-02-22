@@ -189,14 +189,69 @@ La variación sistemática del umbral de echo score para la detección de apropi
 
 ---
 
+### Segmentación de roles por clustering
+
+Mediante un análisis de clustering no supervisado (K-Means, k=2 seleccionado por Silhouette Score) sobre 45 features estandarizadas de 652 usuarios, se identificaron dos perfiles conductuales diferenciados:
+
+- **Cluster 0 — Moderadores/Panelistas (n=375, 57,5%):** Usuarios que intervienen tempranamente (turno mediano de primera intervención: 3), con alta producción verbal (~55% más duración y palabras), y que constituyen el 58,9% de los top-3 speakers de cada sesión.
+- **Cluster 1 — Público/Audiencia (n=277, 42,5%):** Usuarios que se incorporan tardíamente (turno mediano: 35), con menor volumen de participación pero mayor uso de disculpas (+63%) y expresiones de tristeza (+41%). Solo el 0,7% figuran como top-3 speakers.
+
+La distribución de género no difirió significativamente entre clusters (p=0,17), pero los clusters no se distribuyeron homogéneamente entre sesiones (p=0,025).
+
+#### Diferencias de género dentro de cada rol
+
+El cruce cluster × género reveló que las diferencias de género no solo persisten dentro de cada rol, sino que en algunos casos **se amplifican**:
+
+**Dentro de Moderadores (C0) — 9 variables significativas:**
+
+| Variable | Dir. | Cohen's d | p | Δ% cluster | Δ% general |
+|----------|------|-----------|---|------------|------------|
+| Mansplaining | M > F | +0.57 | <0.001 | — | — |
+| N intervenciones | M > F | +0.19 | <0.001 | +19.0% | +10.3% |
+| Asertividad máx. | M > F | +0.27 | 0.002 | +8.2% | +5.4% |
+| Diversidad léxica | M > F | +0.31 | 0.002 | +6.7% | +11.4% |
+| Duración total | M > F | +0.14 | 0.008 | **+11.5%** | +0.4% |
+| Palabras totales | M > F | +0.15 | 0.009 | **+12.4%** | +0.9% |
+| Imperativos | M > F | +0.08 | 0.011 | +14.2% | +33.4% |
+| Conflicto máx. | M > F | +0.27 | 0.013 | +7.8% | −1.4% |
+| Emoción ira | M > F | +0.25 | 0.020 | +448% | +331% |
+
+**Dentro de Audiencia (C1) — 11 variables significativas:**
+
+| Variable | Dir. | Cohen's d | p | Δ% cluster | Δ% general |
+|----------|------|-----------|---|------------|------------|
+| Hedges | F > M | −0.40 | <0.001 | **−23.9%** | −15.0% |
+| Diversidad léxica | M > F | +0.44 | <0.001 | +18.0% | +11.4% |
+| Preguntas | M > F | +0.33 | 0.004 | **+48.1%** | +12.3% |
+| Mansplaining | M > F | +0.31 | 0.004 | — | — |
+| Asertividad | M > F | +0.26 | 0.009 | +5.8% | +2.3% |
+| Duración media | F > M | −0.15 | 0.015 | −14.4% | −13.1% |
+| Uso de títulos | F > M | −0.08 | 0.018 | −18.9% | −14.5% |
+| Emoción alegría | F > M | −0.33 | 0.028 | −73.7% | −36.7% |
+| Atribución | F > M | −0.05 | 0.040 | −12.4% | −10.3% |
+| Variabilidad durac. | F > M | −0.27 | 0.043 | −22.0% | −13.9% |
+| Latencia | F > M | −0.21 | 0.048 | −25.3% | −10.1% |
+
+Los hombres moderadores acaparan 19% más intervenciones que las moderadoras (vs +10% general: la brecha se amplifica). En audiencia, los hombres hacen 48% más preguntas que las mujeres (vs +12% general: la brecha se triplica), y las mujeres usan 24% más hedges (vs −15% general).
+
+#### Efecto llamada de género
+
+Se encontró una correlación positiva significativa entre el porcentaje de mujeres entre los moderadores y el porcentaje de mujeres en la audiencia de cada sesión (Spearman ρ=0,361; p=0,004). Las sesiones con moderadores mayoritariamente femeninos atrajeron un 51,6% de audiencia femenina, frente al 27,2% en sesiones con moderadores mayoritariamente masculinos (Mann-Whitney U p=0,031; Fisher's OR=3,16).
+
+---
+
 ## SÍNTESIS DE HALLAZGOS PRINCIPALES
 
 Los resultados de este estudio revelan un patrón de diferencias mínimas pero estadísticamente significativas en las dinámicas de participación verbal por género en debates científicos de medicina intensiva. Las mujeres presentaron intervenciones ligeramente más largas y con mayor número de palabras, así como mayor expresión de desacuerdo, mientras que los hombres mostraron mayor diversidad léxica. Sin embargo, todos los tamaños del efecto fueron de magnitud despreciable (|g| < 0,08), lo que limita su relevancia práctica.
 
-El hallazgo más robusto fue la segregación discursiva: existió una fuerte tendencia a que las transiciones de turno ocurrieran dentro del mismo género (85% M→M; 75% F→F), con transiciones inter-género minoritarias. Este patrón estructural sugiere la existencia de dinámicas de interacción diferenciadas que trascienden las características individuales de las intervenciones.
+El hallazgo más robusto a nivel de intervención fue la segregación discursiva: existió una fuerte tendencia a que las transiciones de turno ocurrieran dentro del mismo género (85% M→M; 75% F→F), con transiciones inter-género minoritarias. Este patrón estructural sugiere la existencia de dinámicas de interacción diferenciadas que trascienden las características individuales de las intervenciones.
+
+A nivel de usuario, la segmentación no supervisada en dos clusters reveló roles diferenciados (moderadores vs. audiencia) con comportamientos comunicativos marcadamente distintos, aunque sin sesgo de género significativo en la asignación de roles. Sin embargo, ciertas diferencias de género persistieron dentro de cada rol: los hombres mostraron mayor tendencia al patrón explicativo y las mujeres mayor uso de hedges, independientemente de si actuaban como moderadores o como audiencia.
+
+El hallazgo más novedoso fue el **efecto llamada de género**: la composición de género de los moderadores predijo significativamente la composición de género de la audiencia (ρ=0,361; p=0,004). Cuando los moderadores fueron mayoritariamente femeninos, la audiencia femenina casi se duplicó (51,6% vs. 27,2%), sugiriendo que la representación femenina en posiciones de liderazgo tiene un efecto medible de atracción sobre la participación femenina.
 
 Contrariamente a hipótesis previas, no se encontraron diferencias significativas en el éxito de las interrupciones, el patrón explicativo, la apropiación de ideas ni la tasa de preguntas ignoradas. El género no aportó valor predictivo incremental para el éxito de las interrupciones más allá de las variables de estilo comunicativo. Los valores de ICC próximos a cero indican que las diferencias observadas son estables a través de las sesiones y no artefactos de contextos particulares.
 
 ---
 
-*Análisis realizado mediante pipeline computacional que integra procesamiento de señales de audio (Pyannote.audio 3.1, OpenAI Whisper large-v2), clasificación de género por doble validación (análisis de F0 + wav2vec2-xlsr-53), procesamiento de lenguaje natural (spaCy, pysentimiento) y análisis estadístico riguroso (modelos de efectos mixtos, corrección FDR, bootstrap). El código y diccionario de variables están disponibles para garantizar la replicabilidad completa del estudio.*
+*Análisis realizado mediante pipeline computacional que integra procesamiento de señales de audio (Pyannote.audio 3.1, OpenAI Whisper large-v2), clasificación de género por doble validación (análisis de F0 + wav2vec2-xlsr-53), procesamiento de lenguaje natural (spaCy, pysentimiento), clustering no supervisado (K-Means, DBSCAN, Jerárquico) y análisis estadístico riguroso (modelos de efectos mixtos, corrección FDR, bootstrap). El código y diccionario de variables están disponibles para garantizar la replicabilidad completa del estudio.*

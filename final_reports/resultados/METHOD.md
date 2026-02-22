@@ -293,47 +293,115 @@ El análisis se estructura en un marco de 23 módulos independientes que abordan
 
 ---
 
-## 8. Validación y Control de Calidad
+## 8. Análisis de Clusters: Segmentación de Roles de Participación
 
-### 8.1 Análisis de Potencia Post-hoc
+### 8.1 Construcción del Dataset a Nivel Usuario
+
+Para complementar el análisis a nivel de intervención, se construye un dataset agregado a nivel de usuario, donde cada participante único dentro de cada sesión (`user_id = session + "__" + speaker`) constituye una observación. Se agregan 45 features a partir de las métricas de intervención:
+
+- **Conteos:** Número de intervenciones por usuario
+- **Medias y desviaciones típicas:** Duración, conteo de palabras, velocidad de habla, diversidad léxica, puntuaciones de conflicto, asertividad y eco
+- **Porcentajes de marcadores pragmáticos:** Proporción de intervenciones con hedge, pregunta, acuerdo, desacuerdo, cortesía, disculpa, etc.
+- **Distribuciones emocionales y de sentimiento:** Proporción de intervenciones en cada categoría
+- **Métricas de primera intervención:**
+  - `is_top3_speaker`: Indica si el usuario está entre los 3 primeros hablantes distintos de la sesión (ordenados por `start_time`)
+  - `min_turn_number`: Turno más temprano en el que el usuario interviene
+
+### 8.2 Algoritmos de Clustering
+
+Se aplican tres algoritmos de aprendizaje no supervisado sobre las 45 features estandarizadas (z-score), permitiendo contrastar resultados mediante diferentes aproximaciones:
+
+**K-Means:** Algoritmo particional que minimiza la inercia intra-cluster. Se evalúan k=2 a k=10, seleccionando el k óptimo por el criterio de Silhouette Score máximo.
+
+**DBSCAN:** Algoritmo basado en densidad que no requiere especificar k y permite detectar outliers (usuarios con comportamiento atípico). Los parámetros `eps` y `min_samples` se determinan mediante análisis de la distribución de distancias k-vecinos.
+
+**Clustering Jerárquico:** Método aglomerativo (Ward's linkage) que construye un dendrograma completo, cortado al mismo k óptimo de K-Means para comparación directa. Se calcula el Adjusted Rand Index (ARI) para cuantificar la concordancia entre métodos.
+
+### 8.3 Reducción de Dimensionalidad y Visualización
+
+- **PCA (Análisis de Componentes Principales):** Proyección lineal a 2D para visualización, reportando la varianza explicada acumulada.
+- **t-SNE (t-Distributed Stochastic Neighbor Embedding):** Proyección no lineal a 2D con perplexity=30, preservando la estructura local de vecindarios para una representación visual más fiel de las agrupaciones.
+
+### 8.4 Perfilado e Interpretación de Clusters
+
+El perfilado de los clusters obtenidos se realiza mediante:
+
+- **ANOVA unidireccional** sobre cada feature para identificar las variables más discriminantes entre clusters (ordenadas por F-statistic)
+- **Análisis de centroides normalizados** visualizados como heatmap y radar chart
+- **Distribución de género por cluster** evaluada mediante Chi-cuadrado de independencia
+
+**Interpretación empírica del resultado (k=2):**
+- **Cluster 0 — Moderadores/Panelistas:** Usuarios que intervienen primero (turno mediano=3), con alta producción verbal (55% más duración y palabras totales), mayor éxito de interrupción y alta presencia como top-3 speakers (58.9%).
+- **Cluster 1 — Público/Audiencia:** Usuarios que se incorporan tarde (turno mediano=35), con menor volumen de participación pero mayor uso de disculpas (+63%) y expresiones de tristeza (+41%). Solo 0.7% son top-3 speakers.
+
+### 8.5 Análisis de Homogeneidad por Sesión
+
+Para evaluar si la segmentación es un artefacto de ciertas sesiones específicas, se analiza la distribución de clusters por sesión mediante:
+
+- **Chi-cuadrado de homogeneidad** (sesiones × clusters): Evalúa si los clusters se distribuyen uniformemente entre sesiones
+- **Presencia por cluster:** Proporción de sesiones en las que cada cluster está representado
+- **Heatmap de proporciones** sesión × cluster
+
+### 8.6 Cruce Cluster × Género: Diferencias Intra-rol
+
+Para determinar si las diferencias de género persisten *dentro* de cada rol (moderador o audiencia), se realiza un análisis de género estratificado por cluster:
+
+- **Mann-Whitney U** por variable y cluster: Compara hombres vs mujeres dentro de cada cluster
+- **Cohen's d** como medida de tamaño del efecto por cada comparación
+- **Corrección por múltiples comparaciones** implícita al reportar tres niveles de significación (p<0.05, p<0.01, p<0.001)
+
+### 8.7 Efecto Llamada de Género (Gender Attraction Effect)
+
+Se investiga si la composición de género de los moderadores de una sesión predice la composición de género de su audiencia. Para cada sesión, se calcula el porcentaje de mujeres entre moderadores (Cluster 0) y entre audiencia (Cluster 1), y se evalúa la asociación mediante:
+
+- **Correlación de Spearman** entre %F_moderadores y %F_audiencia por sesión
+- **Análisis categórico:** Clasificación de sesiones como "Mayoría F", "Equitativo" o "Mayoría M" según el género dominante de moderadores, comparando el %F de audiencia resultante
+- **Mann-Whitney U** entre %F_audiencia en sesiones con mods-F vs mods-M
+- **Fisher's Exact Test** sobre la tabla 2×2 simplificada (mayoría mod × mayoría aud)
+
+---
+
+## 9. Validación y Control de Calidad
+
+### 9.1 Análisis de Potencia Post-hoc
 
 Se calcula la potencia estadística alcanzada para cada variable, determinando la probabilidad de detectar efectos de diferentes magnitudes dado el tamaño muestral disponible. Esto permite interpretar los hallazgos nulos: una potencia alta (>80%) para detectar efectos pequeños indica que la ausencia de significación refleja genuinamente la inexistencia de diferencias, mientras que una potencia baja sugiere que el estudio podría no haber detectado efectos existentes.
 
-### 8.2 Análisis de Sensibilidad
+### 9.2 Análisis de Sensibilidad
 
 Se evalúa la robustez de las métricas operacionalizadas mediante umbrales (como el índice de eco para apropiación) variando sistemáticamente dichos umbrales y observando la estabilidad de los resultados.
 
-### 8.3 Comparación de Modelos
+### 9.3 Comparación de Modelos
 
 Para evaluar la contribución específica del género como predictor, se comparan modelos completos (con género) versus modelos reducidos (sin género) mediante métricas de discriminación (AUC) y calibración (accuracy). Una diferencia mínima entre modelos indica que el género no aporta información predictiva adicional más allá de las variables de estilo comunicativo.
 
 ---
 
-## 9. Consideraciones Éticas y Limitaciones
+## 10. Consideraciones Éticas y Limitaciones
 
-### 9.1 Clasificación de Género
+### 10.1 Clasificación de Género
 
 El sistema implementa una clasificación binaria (masculino/femenino) basada en características acústicas. Esta aproximación:
 - No captura identidades de género no binarias
 - Asume correspondencia entre características vocales y género
 - Los casos ambiguos fueron resueltos mediante evaluación humana
 
-### 9.2 Limitaciones de Generalización
+### 10.2 Limitaciones de Generalización
 
 - **Contexto específico:** Los datos provienen de debates científicos en medicina de cuidados críticos, lo que limita la extrapolación a otros contextos profesionales o culturales.
 - **Idioma:** El análisis se restringe a sesiones en inglés.
 - **Formato:** Los debates analizados tienen formato estructurado con paridad de género forzada en la composición de paneles, lo que puede diferir de contextos menos regulados.
 
-### 9.3 Limitaciones Interpretativas
+### 10.3 Limitaciones Interpretativas
 
 - **Causalidad:** El diseño observacional no permite establecer relaciones causales entre género y comportamiento comunicativo.
 - **Variables no medidas:** Factores como la seniority académica, especialidad médica o experiencia previa en debates no fueron controlados.
 
 ---
 
-## 10. Reproducibilidad
+## 11. Reproducibilidad
 
-### 10.1 Stack Tecnológico
+### 11.1 Stack Tecnológico
 
 El pipeline se implementa en Python 3.10+ utilizando las siguientes herramientas principales:
 
@@ -347,8 +415,9 @@ El pipeline se implementa en Python 3.10+ utilizando las siguientes herramientas
 | Análisis lingüístico | spaCy (en_core_web_lg) |
 | Análisis afectivo | pysentimiento |
 | Análisis estadístico | statsmodels, scipy, scikit-learn |
+| Clustering y visualización | scikit-learn (K-Means, DBSCAN, AgglomerativeClustering), matplotlib |
 
-### 10.2 Diccionario de Variables
+### 11.2 Diccionario de Variables
 
 Se proporciona un diccionario exhaustivo de todas las variables extraídas y calculadas, especificando para cada una:
 - Nombre técnico

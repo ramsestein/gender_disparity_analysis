@@ -29,10 +29,10 @@ El código se libera públicamente para permitir:
 
 Para una comprensión profunda de la metodología y los hallazgos, consulta los siguientes documentos:
 
-- 🔬 [**Metodología Completa**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/METHOD.md): Detalle técnico del pipeline y marco estadístico.
-- 📊 [**Resultados del Estudio**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/SUMMARY_RESULTS.md): Síntesis de hallazgos y tablas comparativas.
-- 📖 [**Diccionario de Variables**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/DICCIONARIO_VARIABLES.md): Definiciones operacionales de todas las métricas.
-- 📉 [**Informe Estadístico Extenso**](file:///c:/Users/Ramsés/Desktop/Proyectos/gender_diaparity/final_reports/resultados/INFORME_STAT.md): Análisis inferencial y modelos de efectos mixtos.
+- 🔬 [**Metodología Completa**](final_reports/resultados/METHOD.md): Detalle técnico del pipeline y marco estadístico (11 secciones).
+- 📊 [**Resultados del Estudio**](final_reports/resultados/SUMMARY_RESULTS.md): Síntesis de hallazgos y tablas comparativas.
+- 📖 [**Diccionario de Variables**](final_reports/resultados/DICCIONARIO_VARIABLES.md): Definiciones operacionales de todas las métricas (12 secciones + glosario).
+- 📉 [**Informe Estadístico Extenso**](final_reports/resultados/INFORME_STAT.md): 50 secciones con análisis inferencial, clusters y efectos mixtos.
 
 ## 🚀 Instalación Rápida
 
@@ -82,15 +82,25 @@ gender_diaparity/
 │   └── gender_classification/ # Clasificación de género
 ├── final_reports/             # Reportes finales
 │   ├── csv/                   # Reportes en CSV
-│   └── excel/                 # Reportes en Excel
+│   ├── excel/                 # Reportes en Excel
+│   └── resultados/            # Documentación del estudio
+│       ├── METHOD.md          # Metodología completa
+│       ├── SUMMARY_RESULTS.md # Síntesis de resultados
+│       ├── INFORME_STAT.md    # Informe estadístico (50 secciones)
+│       ├── DICCIONARIO_VARIABLES.md # Diccionario de variables y glosario
+│       ├── csv/               # 82 CSVs de respaldo estadístico
+│       └── graficos/          # Visualizaciones (25 gráficos + 15 de clustering)
 ├── logs/                      # Logs de procesamiento
-├── src/                       # Scripts del pipeline
+├── src/                       # Scripts del pipeline de audio
 │   ├── 01_video_to_audio.py
 │   ├── 02_normalize_audio.py
 │   ├── 03_diarization.py
 │   ├── 04_transcription.py
 │   ├── 05_gender_classification.py
 │   └── 06_final_report.py
+├── src_stat/                  # Scripts de análisis estadístico
+│   ├── c01_build_user_dataset.py  # Construcción del dataset a nivel usuario
+│   └── c02_cluster_analysis.py    # Clustering no supervisado y efecto llamada
 ├── run_pipeline.bat           # Ejecutar pipeline (Windows)
 ├── run_pipeline.sh            # Ejecutar pipeline (Linux/Mac)
 ├── requirements.txt           # Dependencias
@@ -160,7 +170,7 @@ Los reportes incluyen las siguientes columnas:
 
 ## 🧪 Metodología del Estudio
 
-El análisis se basa en un marco multidimensional de **10 pilares** que evalúan desde la acústica hasta la pragmática conversacional:
+El análisis se basa en un marco multidimensional de **11 pilares** que evalúan desde la acústica hasta la segmentación de roles:
 
 1.  **Ingesta y Normalización:** Aplicación del estándar EBU R128 (-23 LUFS).
 2.  **Diarización Avanzada:** Uso de Pyannote 3.1 con embeddings ECAPA-TDNN.
@@ -172,15 +182,22 @@ El análisis se basa en un marco multidimensional de **10 pilares** que evalúan
 8.  **Dinámicas de Poder:** Índices de conflictividad, asertividad y eco léxico.
 9.  **Interacciones:** Análisis de transición de turnos, interrupciones y apropiación de ideas.
 10. **Modelado Estadístico:** Modelos de efectos mixtos y corrección FDR.
+11. **Clustering No Supervisado:** Segmentación de roles (K-Means, DBSCAN, Jerárquico), cruce cluster × género y efecto llamada.
 
 ## 📈 Resultados Principales
 
-El estudio realizado sobre **12,138 intervenciones** revela:
+El estudio realizado sobre **12,138 intervenciones** de **652 participantes** en **75 sesiones** revela:
 
+### A nivel de intervención
 - 🤝 **Segregación Discursiva:** Fuerte tendencia a transiciones intra-género (85% H→H; 75% M→M).
 - 🗣️ **Duración:** Las mujeres presentan intervenciones ligeramente más largas (+1.18s) y mayor expresión de desacuerdo.
 - 📉 **Tamaños del Efecto:** Aunque significativos, la mayoría de los efectos son de magnitud despreciable (|g| < 0.08), sugiriendo paridad en el estilo comunicativo bajo condiciones de debate estructurado.
 - ⚖️ **Equidad:** Un 15% de las sesiones alcanzan niveles de paridad funcional superiores al 0.85.
+
+### A nivel de usuario (Clustering)
+- 🔬 **Segmentación de roles:** K-Means identifica 2 perfiles: Moderadores (57.5%) y Audiencia (42.5%), sin sesgo de género en la asignación (p=0.17).
+- 🔍 **Amplificación de brechas:** Dentro de cada rol, ciertas diferencias de género se amplifican. Los hombres moderadores acaparan 19% más intervenciones (+10% general). Los hombres audiencia hacen 48% más preguntas (+12% general).
+- 🧲 **Efecto Llamada de Género:** La composición de género de los moderadores predice la de la audiencia (ρ=0.361, p=0.004). Charlas con moderadoras mayoritariamente femeninas atraen **51.6%** de audiencia femenina vs **27.2%** con moderadores masculinos (OR=3.16).
 
 ## 🔧 Configuración Avanzada
 
@@ -277,7 +294,7 @@ GitHub. https://github.com/ramsestein/gender_disparity_analysis
   title = {Gender Disparity Analysis Pipeline: Automated Gender Disparity Analysis in Academic Conferences},
   year = {2026},
   publisher = {GitHub},
-  url = {https://github.com/[usuario]/gender_disparity_analysis},
+  url = {https://github.com/ramsestein/gender_disparity_analysis},
   version = {1.0}
 }
 ```

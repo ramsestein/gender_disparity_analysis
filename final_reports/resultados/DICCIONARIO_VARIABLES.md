@@ -311,6 +311,42 @@ Este documento proporciona definiciones completas de todas las variables extraí
 
 ---
 
+## 12. Variables de Análisis de Clusters (Nivel Usuario)
+
+### `user_id`
+- **Tipo:** Texto
+- **Formato:** `{session}__{speaker}`
+- **Nivel:** Usuario
+- **Definición:** Identificador único de cada participante dentro de una sesión. Combina sesión y etiqueta de hablante. Un mismo orador en diferentes sesiones se trata como usuarios distintos.
+
+### `is_top3_speaker`
+- **Tipo:** Binario
+- **Valores:** 0, 1
+- **Nivel:** Usuario
+- **Definición:** Indica si el usuario figura entre los 3 primeros hablantes distintos de la sesión, ordenados por `start_time`. Un valor de 1 define a los participantes que inician la conversación, típicamente moderadores o panelistas.
+
+### `min_turn_number`
+- **Tipo:** Entero
+- **Rango:** ≥1
+- **Nivel:** Usuario
+- **Definición:** Turno más temprano en el que el usuario interviene por primera vez en la sesión. Valores bajos indican participación temprana (roles de liderazgo); valores altos indican incorporación tardía (audiencia).
+
+### `cluster_kmeans`
+- **Tipo:** Entero
+- **Valores:** 0, 1
+- **Nivel:** Usuario
+- **Definición:** Asignación de cluster obtenida mediante K-Means (k=2) sobre 45 features estandarizadas. La interpretación empírica de los clusters es:
+  - **Cluster 0 — Moderadores/Panelistas:** Usuarios que hablan primero (turno mediano=3), producen más intervenciones, duración y palabras. 58.9% son top-3 speakers.
+  - **Cluster 1 — Público/Audiencia:** Usuarios que intervienen tarde (turno mediano=35), con menor volumen pero más disculpas y expresiones de tristeza. Solo 0.7% son top-3 speakers.
+
+### `pct_female_mods` / `pct_female_auds`
+- **Tipo:** Flotante
+- **Rango:** 0.0 a 100.0
+- **Nivel:** Sesión
+- **Definición:** Porcentaje de mujeres entre moderadores (Cluster 0) o audiencia (Cluster 1) de cada sesión. Utilizado para cuantificar el efecto llamada de género.
+
+---
+
 # PARTE II: GLOSARIO DE TÉRMINOS TÉCNICOS
 
 ---
@@ -409,6 +445,12 @@ Medida de tamaño del efecto para diferencias entre medias, similar a la d de Co
 ### V de Cramér
 Medida de asociación para tablas de contingencia, normalizada entre 0 y 1 independientemente del tamaño de la tabla. Basada en el estadístico chi-cuadrado.
 
+### Cohen's d
+Medida de tamaño del efecto que expresa la diferencia entre dos medias en unidades de desviación estándar combinada. Valores: |d|<0.2 despreciable, 0.2-0.5 pequeño, 0.5-0.8 moderado, >0.8 grande. Se utiliza en el cruce cluster × género para cuantificar la magnitud de las diferencias entre hombres y mujeres dentro de cada cluster.
+
+### Silhouette Score
+Medida de calidad de clustering que evalúa cuán bien asignado está cada punto a su cluster. Rango: -1 a +1. Valores cercanos a 1 indican clusters densos y bien separados; valores cercanos a 0 indican solapamiento; valores negativos indican asignación incorrecta.
+
 ### Intervalo de Confianza (IC)
 Rango de valores que, con cierto nivel de confianza (típicamente 95%), se espera contenga el verdadero valor del parámetro poblacional. Un IC que cruza el cero para una diferencia indica no significación estadística.
 
@@ -464,6 +506,31 @@ Técnica para evaluar la capacidad de generalización de un modelo dividiendo lo
 
 ---
 
+## Análisis de Clusters (Aprendizaje No Supervisado)
+
+### K-Means
+Algoritmo de clustering particional que divide N observaciones en K grupos, minimizando la varianza intra-cluster (inercia). Requiere especificar K de antemano. En este estudio, K=2 fue seleccionado como óptimo por el criterio de Silhouette.
+
+### DBSCAN (Density-Based Spatial Clustering)
+Algoritmo de clustering basado en densidad que identifica grupos como regiones densas separadas por regiones de baja densidad. No requiere especificar el número de clusters y puede detectar outliers (puntos no asignados a ningún cluster).
+
+### Clustering Jerárquico (Hierarchical Clustering)
+Método aglomerativo que construye una jerarquía de clusters fusionando iterativamente los pares más cercanos. Produce un dendrograma que visualiza la estructura de agrupamiento a múltiples niveles de granularidad.
+
+### PCA (Análisis de Componentes Principales)
+Técnica de reducción de dimensionalidad que proyecta datos de alta dimensión en un espacio de menor dimensión, preservando la máxima varianza posible. Cada componente principal es una combinación lineal de las variables originales.
+
+### t-SNE (t-Distributed Stochastic Neighbor Embedding)
+Técnica de reducción de dimensionalidad no lineal optimizada para la visualización de datos de alta dimensión en 2D o 3D. Preserva la estructura local (vecindarios) a costa de distorsionar las distancias globales.
+
+### ARI (Adjusted Rand Index)
+Medida de concordancia entre dos particiones de datos, ajustada por azar. Rango: -1 a 1. Valores cercanos a 1 indican que las dos agrupaciones son muy similares; 0 indica concordancia al nivel del azar.
+
+### Efecto Llamada de Género (Gender Attraction Effect)
+Fenómeno observado en este estudio por el cual la composición de género de los moderadores/panelistas (Cluster 0) de una sesión correlaciona positivamente con la composición de género de la audiencia (Cluster 1). Sesiones con moderadoras mayoritariamente femeninas atraen un 51.6% de audiencia femenina, frente al 27.2% en sesiones con moderadores mayoritariamente masculinos (Spearman ρ=0.361, p=0.004).
+
+---
+
 ## Análisis Conversacional
 
 ### Turno de Habla (Turn)
@@ -502,6 +569,9 @@ Representación equitativa de hombres y mujeres, típicamente expresada como pro
 
 ### Sticky Floor (Piso Pegajoso)
 Metáfora del ámbito laboral que describe barreras invisibles que dificultan el avance inicial desde posiciones de entrada. En el estudio, adaptada para referirse al tiempo que tarda cada género en tomar la palabra por primera vez en una sesión.
+
+### Efecto Llamada (Attraction Effect)
+Efecto por el cual la representación de un género en posiciones de liderazgo o visibilidad (moderadores, panelistas) influye en la composición de género de la participación subsiguiente (audiencia). Documentado empíricamente en este estudio con OR=3.16.
 
 ### Backlash
 Reacción negativa o penalización social que pueden enfrentar individuos (especialmente mujeres) por comportamientos que violan expectativas de género tradicionales, como la asertividad o directividad.
