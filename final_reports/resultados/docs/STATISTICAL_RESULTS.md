@@ -525,25 +525,45 @@ The Next Members list was cross-referenced against the 94 nominally identified s
 | Metric | Value |
 |---------|-------|
 | Total Next Members in list | 2,339 |
-| Next Members identified in sessions | 7 (0.3%) |
-| Of which, moderators | 7 (100%) |
+| Next Members identified in sessions | 11 (0.5%) |
+| Of which, moderators | 9 (81.8%) |
+| Of which, speakers | 2 (18.2%) |
 | Of which, audience | 0 (0%) |
 
 **Table 22. Identified Next Members**
 
-| Person | Role | Session |
-|---------|-----|--------|
-| David Pérez-Torres | Moderator / Public | 39 / 47 |
-| Ahmad El Ouweini | Moderator | 4 |
-| Hannnah Wozniak | Moderator | 42 |
-| Andrea Ortiz | Moderator | 50 |
-| Gaetano Scaramuzzo | Moderator | Video 10 |
-| Adam Woodman-Bailey | Moderator | Video 27 |
-| Beatrice Brunoni | Moderator | Video 35 |
+| Person | Role | Session | Identification method |
+|---------|-----|--------|-----------------------|
+| David Pérez-Torres | Moderator / Public | 39 / 47 | Automated (fuzzy matching) |
+| Ahmad El Ouweini | Moderator | 4 | Automated (fuzzy matching) |
+| Hannah Wozniak | Moderator | 42 | Automated (fuzzy matching) |
+| Andrea Ortiz | Moderator | 50 | Automated (fuzzy matching) |
+| Gaetano Scaramuzzo | Moderator | Video 10 | Automated (fuzzy matching) |
+| Adam Woodman-Bailey | Moderator | Video 27 | Automated (fuzzy matching) |
+| Beatrice Brunoni | Moderator | Video 35 | Automated (fuzzy matching) |
+| Mohamed Alebsawy | Moderator | 13 | Manual patch (self-intro: *"My name is Muhammad Al-Fsaoui from UK"*) |
+| Margarita Borislavova | Speaker | 46 | Manual patch (self-intro: *"I'm Margarita…working in the ICU in France"*) |
+| Stephan Katzenschlager | Speaker | Video 3 | Manual patch (self-intro: *"Stefan Kacznerschleuer from Germany"*) |
+| Kevin Roedl | Moderator | 53 | Manual patch (introduced by co-moderator as *"Kevin…from Hamburg, Germany"*) |
 
-### 22.4 Conclusion
+*Note: 4 of the 11 identifications were made via manual review of transcription self-introductions, after automated fuzzy matching failed due to Whisper ASR transcription errors in the speakers' names.*
 
-The sample of Next Members available in the corpus (n=7) is insufficient to perform comparative statistical analyses. Next program members predominantly serve as session moderators at the congress, not as audience intervenients. Stratified analysis by Next program membership is therefore discarded.
+### 22.4 Behavioral Comparison
+
+A Mann-Whitney U comparison was conducted between Next Members (n=11 persons, 195 interventions) and the remaining identified moderators (n=11 persons, 765 interventions) across four behavioral metrics:
+
+| Metric | Next mean | Mod mean | p-value | r | sig |
+|--------|----------:|----------:|--------:|----:|-----|
+| Duration (s) | 13.74 | 9.81 | 0.980 | 0.001 | ns |
+| Interruption rate (emitted) | 0.015 | 0.041 | 0.090 | 0.055 | ns |
+| Interruption rate (received) | 0.031 | 0.044 | 0.394 | 0.028 | ns |
+| Overlap rate | 0.031 | 0.044 | 0.394 | 0.028 | ns |
+
+No statistically significant differences were found. Next Members showed a trend toward longer interventions and slightly lower interruption rates, but neither reached significance (all p > 0.05, all r < 0.06).
+
+### 22.5 Conclusion
+
+With n=11 identified Next Members (0.5% of the 2,339-strong list), the corpus does not provide sufficient statistical power for confirmatory analyses. The behavioral comparison with non-Next moderators yields no significant differences. Stratified analysis by Next program membership remains exploratory.
 
 ---
 

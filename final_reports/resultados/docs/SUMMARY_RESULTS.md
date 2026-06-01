@@ -445,7 +445,7 @@ The substantial AUC improvement for mansplaining (≈ +30 points) between OLS an
 
 ### ESICM Next Members Analysis
 
-As a complementary analysis, the list of 2,339 members of the ESICM Next program (young researchers) was cross-referenced against the 94 nominally identified speakers. Only **7 of 2,339 (0.3%)** were identified in the recorded sessions, all acting as moderators. The sample is insufficient for comparative analyses, so stratified analysis by Next program membership is discarded.
+As a complementary analysis, the list of 2,339 members of the ESICM Next program (young researchers) was cross-referenced against the 94 nominally identified speakers. **11 of 2,339 (0.5%)** were identified in the recorded sessions (7 via automated fuzzy matching; 4 via manual transcription review due to Whisper ASR errors). Of these, 9 acted as moderators and 2 as speakers. A Mann-Whitney U comparison against non-Next moderators found no significant behavioral differences (all p > 0.05). The sample remains insufficient for confirmatory stratified analyses.
 
 ### Power Analysis
 

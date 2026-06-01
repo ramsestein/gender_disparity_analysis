@@ -1,14 +1,24 @@
 """
 _patch_missed_matches.py
 ========================
-Corrige los 4 speakers que se presentaron con errores de transcripción
+Corrige speakers que se presentaron con errores de transcripción
 y no fueron captados por enrich_speakers.py.
 
-Correcciones confirmadas:
+Correcciones confirmadas (tanda 1):
   1. "20 The consensus..." SPEAKER_05  → Christian Jung
   2. "Video 3 emergency..." SPEAKER_02  → Jos Latour      (si no está ya)
   3. "20 The consensus..." SPEAKER_09  → Jean-Louis Teboul
   4. "Video 1 Therapeutic..." SPEAKER_00 → Richard Bourne
+
+Correcciones confirmadas (tanda 2 — validadas por auto-presentación en transcripción):
+  5. "13 Interactive session - Is armcuff..." SPEAKER_03 → Mohamed Alebsawy
+     (se presenta como "Muhammad Al-Fsaoui from UK")
+  6. "46_How_promote_inclusion_disability..." SPEAKER_09 → Margarita Borislavova
+     (se presenta como "I'm Margarita...working in the ICU in France")
+  7. "Video 3 emergency care workers-019..." SPEAKER_03 → Stephan Katzenschlager
+     (se presenta como "Stefan Kacznerschleuer from Germany, Helbert")
+  8. "53_Should_intensivist_be_in_ED..." SPEAKER_03 → Kevin Roedl
+     (presentado por SPEAKER_07 como "Kevin...from Hamburg, Germany")
 """
 import numpy as np
 import pandas as pd
@@ -29,6 +39,7 @@ excel_df = pd.read_excel(EXCEL_PATH, sheet_name="Grouped participants")
 
 # Correcciones: (csv_stem, speaker, excel_person_name)
 CORRECTIONS = [
+    # Tanda 1
     ("20 The consensus guideline on shock and haemodynamic monitoring- Why should I follow it__report",
      "SPEAKER_05", "Christian Jung"),
     ("Video 3 emergency care workers-019_report",
@@ -37,6 +48,15 @@ CORRECTIONS = [
      "SPEAKER_09", "Jean-Louis Teboul"),
     ("Video 1 Therapeutic challanges-011_report",
      "SPEAKER_00", "Richard Bourne"),
+    # Tanda 2 — validadas por auto-presentación en transcripción
+    ("13 Interactive session - Is armcuff enough for monitoring extracorporeal support__report",
+     "SPEAKER_03", "Mohamed Alebsawy"),
+    ("46_How_promote_inclusion_disability_report",
+     "SPEAKER_09", "Margarita Borislavova"),
+    ("Video 3 emergency care workers-019_report",
+     "SPEAKER_03", "Stephan Katzenschlager"),
+    ("53_Should_intensivist_be_in_ED_report",
+     "SPEAKER_03", "Kevin Roedl"),
 ]
 
 log_df   = pd.read_csv(LOG_PATH)

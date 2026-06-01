@@ -169,9 +169,11 @@ As a complementary analysis, the list of 2,339 members of the **ESICM Next** pro
 1. **Token-subset**: all words in the speaker's name had to be contained in the Next Member's name (allowing missing surnames but no extra words).
 2. **Complementary fuzzy**: `token_set_ratio >= 85` (RapidFuzz) to capture minor spelling errors.
 
-**Result:** Only 7 of the 2,339 Next Members (0.3%) were identified as participants in the recorded sessions. All 7 acted as moderators, not as audience members. The remaining Next Members did not intervene in any of the analyzed sessions.
+**Result:** 11 of the 2,339 Next Members (0.5%) were identified as participants in the recorded sessions. 7 were matched automatically via fuzzy matching; 4 additional members were identified through manual review of transcription self-introductions, required because Whisper ASR transcription errors distorted their names beyond the fuzzy matching threshold. Of the 11, 9 acted as moderators and 2 as speakers; none appeared as anonymous audience members.
 
-**Methodological conclusion:** The sample of Next Members available in the corpus (n=7) is insufficient to perform comparative statistical analyses with the rest of participants. The Next program trains young researchers who, in the congress context, predominantly serve as session moderators, not as audience intervenients. Stratified analysis by Next program membership is therefore discarded.
+A Mann-Whitney U comparison of Next Members (195 interventions) versus non-Next identified moderators (765 interventions) found no statistically significant differences in duration, interruption rate, or overlap (all p > 0.05, all r < 0.06).
+
+**Methodological conclusion:** The sample of Next Members in the corpus (n=11) remains small relative to the 2,339-member registry. No behavioral differentiation from senior moderators is detected. Stratified analysis by Next program membership is therefore treated as exploratory only.
 
 ---
 
