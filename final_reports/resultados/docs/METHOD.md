@@ -165,15 +165,16 @@ Nominal identification allows external validation of the acoustic gender classif
 
 As a complementary analysis, the list of 2,339 members of the **ESICM Next** program (young researchers selected by the society) was cross-referenced against the 94 nominally identified speakers, to evaluate whether Next program participants exhibited differentiated behavioral patterns.
 
-**Matching Procedure:** A two-phase matching was implemented:
+**Matching Procedure:** A three-phase matching was implemented:
 1. **Token-subset**: all words in the speaker's name had to be contained in the Next Member's name (allowing missing surnames but no extra words).
 2. **Complementary fuzzy**: `token_set_ratio >= 85` (RapidFuzz) to capture minor spelling errors.
+3. **Manual review**: For speakers not captured by automated methods, transcriptions were manually inspected for self-introductions and third-party introductions by co-moderators/co-panelists.
 
-**Result:** 11 of the 2,339 Next Members (0.5%) were identified as participants in the recorded sessions. 7 were matched automatically via fuzzy matching; 4 additional members were identified through manual review of transcription self-introductions, required because Whisper ASR transcription errors distorted their names beyond the fuzzy matching threshold. Of the 11, 9 acted as moderators and 2 as speakers; none appeared as anonymous audience members.
+**Result:** 15 of the 2,339 Next Members (0.6%) were identified as participants in the recorded sessions. 7 were matched automatically via fuzzy matching; 8 additional members were identified through manual review of transcriptions (self-introductions and third-party introductions), required because Whisper ASR transcription errors distorted their names beyond the fuzzy matching threshold. Of the 15, 12 acted as moderators and 3 as speakers; none appeared as anonymous audience members.
 
-A Mann-Whitney U comparison of Next Members (195 interventions) versus non-Next identified moderators (765 interventions) found no statistically significant differences in duration, interruption rate, or overlap (all p > 0.05, all r < 0.06).
+A Mann-Whitney U comparison of Next Members (486 interventions) versus non-Next identified moderators (765 interventions) found one statistically significant difference: **Next Members emitted interruptions at a significantly lower rate** (0.014 vs 0.041; p = 0.009, Mann-Whitney U, r = 0.074). No significant differences were found for duration, received interruptions, or overlap (all p > 0.20).
 
-**Methodological conclusion:** The sample of Next Members in the corpus (n=11) remains small relative to the 2,339-member registry. No behavioral differentiation from senior moderators is detected. Stratified analysis by Next program membership is therefore treated as exploratory only.
+**Methodological conclusion:** With n=15 identified Next Members and 486 interventions, the sample is sufficient to detect the one significant finding (lower emitted interruption rate). This may reflect a behavioral profile typical of junior researchers, or partly the predominantly female composition of the identified NEXT group (78% female interventions). Stratified analysis by Next program membership remains exploratory.
 
 ---
 

@@ -19,6 +19,16 @@ Correcciones confirmadas (tanda 2 — validadas por auto-presentación en transc
      (se presenta como "Stefan Kacznerschleuer from Germany, Helbert")
   8. "53_Should_intensivist_be_in_ED..." SPEAKER_03 → Kevin Roedl
      (presentado por SPEAKER_07 como "Kevin...from Hamburg, Germany")
+
+Correcciones confirmadas (tanda 3 — validadas por presentación de terceros en transcripción):
+  9. "Video 11 When intubating..." SPEAKER_04 → Elena Sancho Ferrando
+     (SPEAKER_06/05 la llaman "Elena" mientras ella presenta el caso)
+  10. "32 Debate - Post-ICU..." SPEAKER_03 → Eleonora Balzani
+      (SPEAKER_02 la llama "Dr. Balsani", ASR de Balzani)
+  11. "32 Debate - Post-ICU..." SPEAKER_04 → Ana-Maria Ioan
+      (se presenta como "Ana Maria Yuan [Ioan] from Madrid Spain")
+  12. "Segunda tanda. Video 12 Interactive..." SPEAKER_01 → Luigi Zattera
+      (presentado por Emilio Rodriguez-Ruiz como colega del comité NEXT)
 """
 import numpy as np
 import pandas as pd
@@ -57,6 +67,22 @@ CORRECTIONS = [
      "SPEAKER_03", "Stephan Katzenschlager"),
     ("53_Should_intensivist_be_in_ED_report",
      "SPEAKER_03", "Kevin Roedl"),
+    # Tanda 3 — validadas por presentación de terceros en transcripción
+    # Elena Sancho Ferrando: SPEAKER_06 (=Gaetano Perchiazzi) y SPEAKER_05 la llaman "Elena"
+    #   mientras presenta el caso clínico; ella es la ponente principal de Video 11
+    ("Video 11 When intubating_report",
+     "SPEAKER_04", "Elena Sancho Ferrando"),
+    # Eleonora Balzani: SPEAKER_02 la llama "Dr. Balsani" (ASR de Balzani) en sesión 32
+    ("32 Debate - Post-ICU outpatient clinic- Does it change my patient outcomes__report",
+     "SPEAKER_03", "Eleonora Balzani"),
+    # Ana-Maria Ioan: SPEAKER_04 se auto-presenta como "Ana Maria Yuan [Ioan] from Madrid Spain"
+    #   y llama a Rita Fernández "my co-moderator" — SPEAKER_04 ES Ana-Maria Ioan
+    ("32 Debate - Post-ICU outpatient clinic- Does it change my patient outcomes__report",
+     "SPEAKER_04", "Ana-Maria Ioan"),
+    # Luigi Zattera: SPEAKER_02 (=Emilio Rodriguez-Ruiz) lo presenta como
+    #   "my colleague from the next committee, Luigi Sátera [Zattera]" en Video 12
+    ("Segunda tanda. Video 12 Interactive_report",
+     "SPEAKER_01", "Luigi Zattera"),
 ]
 
 log_df   = pd.read_csv(LOG_PATH)

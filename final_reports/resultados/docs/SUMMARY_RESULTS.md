@@ -445,7 +445,7 @@ The substantial AUC improvement for mansplaining (≈ +30 points) between OLS an
 
 ### ESICM Next Members Analysis
 
-As a complementary analysis, the list of 2,339 members of the ESICM Next program (young researchers) was cross-referenced against the 94 nominally identified speakers. **11 of 2,339 (0.5%)** were identified in the recorded sessions (7 via automated fuzzy matching; 4 via manual transcription review due to Whisper ASR errors). Of these, 9 acted as moderators and 2 as speakers. A Mann-Whitney U comparison against non-Next moderators found no significant behavioral differences (all p > 0.05). The sample remains insufficient for confirmatory stratified analyses.
+As a complementary analysis, the list of 2,339 members of the ESICM Next program (young researchers) was cross-referenced against the 94 nominally identified speakers. **15 of 2,339 (0.6%)** were identified in the recorded sessions (7 via automated fuzzy matching; 8 via manual transcription review of self-introductions and third-party introductions, due to Whisper ASR errors). Of these, 12 acted as moderators and 3 as speakers. A Mann-Whitney U comparison (486 NEXT interventions vs 765 non-Next moderator interventions) found that **NEXT members emitted interruptions at a significantly lower rate** (0.014 vs 0.041; p = 0.009, r = 0.074). No significant differences were found for duration, received interruptions, or overlap. This finding may reflect the junior profile of NEXT members or their predominantly female composition (78% of identified NEXT interventions).
 
 ### Power Analysis
 

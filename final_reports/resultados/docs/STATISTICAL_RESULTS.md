@@ -520,14 +520,18 @@ The Next Members list was cross-referenced against the 94 nominally identified s
 1. **Token-subset**: all words in the speaker's name must be contained in the Next Member's name.
 2. **Complementary fuzzy**: `token_set_ratio >= 85` (RapidFuzz).
 
+A second identification round (manual review of transcriptions) was conducted for speakers not captured by automated matching, using:
+- Self-introductions in transcripts (despite Whisper ASR distortion).
+- Third-party introductions by co-moderators/co-panelists during the session.
+
 ### 22.3 Results
 
 | Metric | Value |
 |---------|-------|
 | Total Next Members in list | 2,339 |
-| Next Members identified in sessions | 11 (0.5%) |
-| Of which, moderators | 9 (81.8%) |
-| Of which, speakers | 2 (18.2%) |
+| Next Members identified in sessions | 15 (0.6%) |
+| Of which, moderators | 12 (80.0%) |
+| Of which, speakers | 3 (20.0%) |
 | Of which, audience | 0 (0%) |
 
 **Table 22. Identified Next Members**
@@ -545,25 +549,29 @@ The Next Members list was cross-referenced against the 94 nominally identified s
 | Margarita Borislavova | Speaker | 46 | Manual patch (self-intro: *"I'm Margarita…working in the ICU in France"*) |
 | Stephan Katzenschlager | Speaker | Video 3 | Manual patch (self-intro: *"Stefan Kacznerschleuer from Germany"*) |
 | Kevin Roedl | Moderator | 53 | Manual patch (introduced by co-moderator as *"Kevin…from Hamburg, Germany"*) |
+| Elena Sancho Ferrando | Moderator | Video 11 | Manual patch (co-panelists address her as *"Elena"* while she presents the clinical case) |
+| Eleonora Balzani | Speaker | 32 | Manual patch (co-presenter addresses her as *"Dr. Balsani"*, ASR of Balzani) |
+| Ana-Maria Ioan | Moderator | 32 | Manual patch (self-intro: *"Ana Maria Yuan [Ioan] from Madrid Spain, and my co-moderator Rita…"*) |
+| Luigi Zattera | Moderator | Video 12 | Manual patch (introduced by co-moderator Emilio Rodriguez-Ruiz as *"my colleague from the next committee, Luigi Sátera [Zattera]"*) |
 
-*Note: 4 of the 11 identifications were made via manual review of transcription self-introductions, after automated fuzzy matching failed due to Whisper ASR transcription errors in the speakers' names.*
+*Note: 8 of the 15 identifications were made via manual review of transcription self-introductions or third-party introductions, after automated fuzzy matching failed due to Whisper ASR transcription errors in the speakers' names.*
 
 ### 22.4 Behavioral Comparison
 
-A Mann-Whitney U comparison was conducted between Next Members (n=11 persons, 195 interventions) and the remaining identified moderators (n=11 persons, 765 interventions) across four behavioral metrics:
+A Mann-Whitney U comparison was conducted between Next Members (486 interventions) and the remaining identified moderators (n=11 persons, 765 interventions) across four behavioral metrics:
 
 | Metric | Next mean | Mod mean | p-value | r | sig |
 |--------|----------:|----------:|--------:|----:|-----|
-| Duration (s) | 13.74 | 9.81 | 0.980 | 0.001 | ns |
-| Interruption rate (emitted) | 0.015 | 0.041 | 0.090 | 0.055 | ns |
-| Interruption rate (received) | 0.031 | 0.044 | 0.394 | 0.028 | ns |
-| Overlap rate | 0.031 | 0.044 | 0.394 | 0.028 | ns |
+| Duration (s) | 12.58 | 9.81 | 0.2175 | 0.035 | ns |
+| Interruption rate (emitted) | 0.014 | 0.041 | **0.0087** | 0.074 | ** |
+| Interruption rate (received) | 0.033 | 0.044 | 0.3109 | 0.029 | ns |
+| Overlap rate | 0.033 | 0.044 | 0.3109 | 0.029 | ns |
 
-No statistically significant differences were found. Next Members showed a trend toward longer interventions and slightly lower interruption rates, but neither reached significance (all p > 0.05, all r < 0.06).
+**Significant finding**: Next Members emit interruptions at a significantly lower rate than non-Next moderators (p = 0.0087, Mann-Whitney U, two-tailed). The effect size is small (r = 0.074), but the direction is consistent: young NEXT researchers interrupt less frequently when moderating. Gender composition of the NEXT group: 78% female interventions (380/486) vs 22% male (106/486).
 
 ### 22.5 Conclusion
 
-With n=11 identified Next Members (0.5% of the 2,339-strong list), the corpus does not provide sufficient statistical power for confirmatory analyses. The behavioral comparison with non-Next moderators yields no significant differences. Stratified analysis by Next program membership remains exploratory.
+With n=15 identified Next Members (0.6% of the 2,339-strong list), the increased sample size (486 NEXT interventions vs 195 previously) now yields one statistically significant result: **NEXT members emit fewer interruptions** than established non-Next moderators (p = 0.009). This may reflect a behavioral profile typical of junior researchers (more cautious, less assertive in moderating discussions), or it may partly reflect the predominantly female composition of the identified NEXT group. No significant differences were found for duration, received interruptions, or overlap.
 
 ---
 
