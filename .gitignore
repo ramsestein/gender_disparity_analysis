@@ -17,6 +17,8 @@ ENV/
 .env
 
 # Carpetas de datos (no subir a GitHub)
+esicm_talks_grouped_9_groups_new.xlsx
+Next*
 video
 video_list.txt
 fuentes/audio/
@@ -24,10 +26,9 @@ fuentes/audio_normalized/
 fuentes/diarization/
 fuentes/transcription/
 fuentes/gender_classification/  
-final_reports/csv/
-final_reports/csv_cleaned/
+final_reports/csv*/
 final_reports/excel/
-final_reports/resultados/csv/
+final_reports/resultados/csv/p19*
 logs
 
 # Archivos temporales
